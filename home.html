@@ -5,44 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
-      <a href="./home.html">LOGO</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Обо мне</a>
+    <header class="header container">
+      <a href="./home.html" class="header__logo">
+        <svg class="header__image">
+          <use href="./images/sprite-1.svg#icon-LOGO"></use>
+        </svg>
+      </a>
+      <button type="button" class="mobile-button" data-menu-button>
+        <svg width="48px" height="48px" class="mobile-button__image">
+          <use href="./images/sprite-1.svg#icon-mobile-menu" class="mobile-button__open"></use>
+          <use
+            href="./images/sprite-1.svg#icon-mobile-close-menu"
+            class="mobile-button__close"
+          ></use>
+        </svg>
+      </button>
+      <div class="header__mobile-menu" data-menu>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Обо мне</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Статьи</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg width="24px" height="24px" class="social-links__image">
+                <use href="./images/sprite-1.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="">Услуги</a>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg width="24px" height="24px" class="social-links__image">
+                <use href="./images/sprite-1.svg#icon-telegram"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="">Клиенты</a>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg width="24px" height="24px" class="social-links__image">
+                <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="">Статьи</a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
+          <li class="social-links__item">
+            <a href="" class="social-links__link">
+              <svg width="24px" height="24px" class="social-links__image">
+                <use href="./images/sprite-1.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="">Instagram</a>
-        </li>
-        <li>
-          <a href="">Telegram</a>
-        </li>
-        <li>
-          <a href="">Viber</a>
-        </li>
-        <li>
-          <a href="">Youtube</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
@@ -55,7 +97,7 @@
         <button>КОНСУЛЬТАЦИЯ</button>
       </section>
       <!--Для кого-->
-      <section>
+      <!-- <section>
         <h2>Коучинг для вас, если</h2>
         <ul>
           <li>
@@ -79,9 +121,9 @@
             <p>Не хватает времени на личную жизнь и отдых.</p>
           </li>
         </ul>
-      </section>
+      </section> -->
       <!--Пакеты услуг-->
-      <section>
+      <!-- <section>
         <h2>Мои услуги</h2>
         <li>
           <article>
@@ -144,9 +186,9 @@
             <button>Оплатить</button>
           </article>
         </li>
-      </section>
+      </section> -->
       <!--Заявка на консультацию-->
-      <article>
+      <!-- <article>
         <h2>Есть вопросы по процессу коучинга?</h2>
         <p>Оставьте свои контактные данные и я проконсультирую вас по возникшим вопросам</p>
         <form>
@@ -158,9 +200,9 @@
           </label>
           <button type="submit">Получить консультацию</button>
         </form>
-      </article>
+      </article> -->
       <!--О коуче-->
-      <section>
+      <!-- <section>
         <img src="" alt="" />
         <h2>“Обо мне”</h2>
         <p>
@@ -187,9 +229,9 @@
             командой.
           </li>
         </ul>
-      </section>
+      </section> -->
       <!--Клиенты-->
-      <section>
+      <!-- <section>
         <ul>
           <li>
             <a href=""><img src="" alt="" /></a>
@@ -217,9 +259,9 @@
           </li>
         </ul>
         <a href="">Все клиенты</a>
-      </section>
+      </section> -->
       <!--Отзывы клиентов-->
-      <section>
+      <!-- <section>
         <h2>Видеоотзывы от клиентов</h2>
         <ul>
           <li><button></button></li>
@@ -234,9 +276,9 @@
           taxi увеличился на 30% за счёт привлечения новых водителей; водители-партнёры стали
           лояльнее относится к компании; вышли на рынок Польши.
         </p>
-      </section>
+      </section> -->
       <!--Блог коуча-->
-      <section>
+      <!-- <section>
         <h2>Мой блог</h2>
         <ul>
           <li><button></button></li>
@@ -272,9 +314,9 @@
           </li>
         </ul>
         <a href="">Все статьи</a>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <a href="./home.html">LOGO</a>
       <ul>
         <li>
@@ -330,6 +372,7 @@
           </li>
         </ul>
       </address>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
