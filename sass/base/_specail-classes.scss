@@ -9,8 +9,8 @@
         width: 373px;
     }
 
-    @media screen and (min-width:764px) {
-        width: 764px;
+    @media screen and (min-width:767px) {
+        width: 767px;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -19,5 +19,22 @@
         width: 1200px;
         padding-right: 10px;
         padding-left: 10px;
+    }
+}
+
+.title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.416;
+        text-transform: uppercase;
+        color: $primary-text-color;
+
+        &--accent {
+            color: $accent-color
+        }
+
+    @media screen and (min-width:767px) {
+            font-size: 36px;
+            line-height: 1.388;
     }
 }

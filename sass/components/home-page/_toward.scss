@@ -1,0 +1,136 @@
+.toward__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:767px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+.toward__title {
+    margin-bottom: 20px;
+}
+
+.toward__item {
+    position: relative;
+    overflow: hidden;
+    padding:77px 20px 30px 20px;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+}
+
+.toward__number {
+        position: absolute;
+        top: 18px;
+        left: 13px;
+
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.307;
+        text-transform: lowercase; 
+        color: #FFFFFF;
+    
+        transform: rotate(-90deg);
+
+        @media screen and (min-width:767px) {
+            top: 23px;
+            left: 18px;
+        }
+}
+
+.elipse::before {
+    position: absolute;
+    top: -117px;
+    left: -102px;
+    z-index: -1;
+    content: '';
+    display: block;
+    width: 188px;
+        height: 188px;
+        border-radius: 50%;
+        background-color: $accent-color;
+
+    @media screen and (min-width:767px) {
+        top: -80px;
+        left: -90px;
+    }
+}
+
+.toward__undertitle {
+    margin-bottom: 15px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.277; 
+        color: $primary-text-color;
+}
+
+.toward__about {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.312;
+    color: $primary-text-color;
+}
+
+
+// MAX--WIDTH 766PX
+@media screen and (max-width:766px) {
+    .toward__undertitle, 
+    .toward__about {
+        width:89%;
+    }
+
+    .toward__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+// MIN-WIDTH 767px
+@media screen and (min-width:767px) {
+
+    .toward__list {
+        display: flex;
+    }
+        
+
+    
+    .toward__title {
+            margin-bottom: 30px;
+        }
+
+    .toward__number {
+            font-size: 34px;
+            line-height: 1.294;
+    }
+
+    }
+
+// MIN-WIDTH 767px--MAX-WIDTH 1199px
+@media screen and (min-width:767px) and (max-width:1199px) {
+    .toward__list {
+            flex-wrap: wrap;
+            margin: -5px;
+        }
+    .toward__item {
+        padding: 133px 20px 35px 20px;
+        margin: 5px;
+        width: calc((100% - 10px * 2) / 2);
+    }
+}
+
+// MIN-WIDTH 1200px 
+@media screen and (min-width:1200px) {
+    .toward__list {
+        margin: -10px;
+    }
+
+    .toward__item {
+            padding: 140px 20px 30px 20px;
+            margin: 10px;
+            width: calc((100% - 20px * 4) / 4);
+        }
+}

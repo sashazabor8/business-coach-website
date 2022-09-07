@@ -56,28 +56,28 @@
         </nav>
         <ul class="social-links">
           <li class="social-links__item">
-            <a href="" class="social-links__link">
+            <a href="https://www.instagram.com/" class="social-links__link">
               <svg width="24px" height="24px" class="social-links__image">
                 <use href="./images/sprite-1.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a href="" class="social-links__link">
+            <a href="https://web.telegram.org/k/" class="social-links__link">
               <svg width="24px" height="24px" class="social-links__image">
                 <use href="./images/sprite-1.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a href="" class="social-links__link">
+            <a href="https://www.whatsapp.com/" class="social-links__link">
               <svg width="24px" height="24px" class="social-links__image">
                 <use href="./images/sprite-1.svg#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
           <li class="social-links__item">
-            <a href="" class="social-links__link">
+            <a href="https://www.youtube.com/" class="social-links__link">
               <svg width="24px" height="24px" class="social-links__image">
                 <use href="./images/sprite-1.svg#icon-youtube"></use>
               </svg>
@@ -88,9 +88,11 @@
     </header>
     <main>
       <!--Герой-->
-      <div class="hero__wrap">
-        <section class="hero">
-          <div class="hero__container container">
+
+      <section class="hero">
+        <div class="hero__container container">
+          <span class="hero__blur"></span>
+          <div class="hero__wrap">
             <h1 class="hero__title">
               <span class="hero__title--neon">БИЗНЕС-КОУЧ</span>
               <br />Иван<br />
@@ -101,117 +103,216 @@
               добиться новых высот
             </p>
             <button class="hero__button">КОНСУЛЬТАЦИЯ</button>
-
-            <!-- <div class="hero__picture-wrap-wrap">
-            <div class="hero__picture-wrap">
-              <picture>
-                <source
-                  srcset="./images/hero/hero-img-tel.webp 1x, ./images/hero/hero-img-tel@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./images/hero/hero-img-tel.png 1x, ./images/hero/hero-img-tel@2x.png 2x"
-                  type="image/webp"
-                />
-                <img src="./images/hero/hero-img-tel.png" alt="" class="hero__picture" />
-              </picture>
-            </div>
-          </div> -->
           </div>
-        </section>
-      </div>
-
+        </div>
+      </section>
       <!--Для кого-->
-      <!-- <section>
-        <h2>Коучинг для вас, если</h2>
-        <ul>
-          <li>
-            <h3>01</h3>
-            <p>Вы устали от неэффективности вашей команды.</p>
-            <p>Сотрудники не дисциплинированы и не мотивированы.</p>
-          </li>
-          <li>
-            <h3>02</h3>
-            <p>Нет времени систематизировать свой бизнес у себя в голове.</p>
-            <p>Нет чёткого видения будущего компании.</p>
-          </li>
-          <li>
-            <h3>03</h3>
-            <p>Все приходится делать самостоятельно.</p>
-            <p>Вы постоянно тушите пожары.</p>
-          </li>
-          <li>
-            <h3>04</h3>
-            <p>Вам не хватает 24 часа в сутках, чтобы успеть всё что нужно.</p>
-            <p>Не хватает времени на личную жизнь и отдых.</p>
-          </li>
-        </ul>
-      </section> -->
+      <section class="toward">
+        <div class="toward__container container">
+          <h2 class="toward__title title">
+            Коучинг для вас, <span class="title--accent">если</span>
+          </h2>
+          <ul class="toward__list">
+            <li class="toward__item">
+              <span class="elipse"></span>
+              <h3 class="toward__number">01</h3>
+              <p class="toward__undertitle">Вы устали от неэффективности вашей команды.</p>
+              <p class="toward__about">Сотрудники не дисциплинированы и не мотивированы.</p>
+            </li>
+            <li class="toward__item">
+              <span class="elipse"></span>
+              <h3 class="toward__number">02</h3>
+              <p class="toward__undertitle">
+                Нет времени систематизировать свой бизнес у себя в голове.
+              </p>
+              <p class="toward__about">Нет чёткого видения будущего компании.</p>
+            </li>
+            <li class="toward__item">
+              <span class="elipse"></span>
+              <h3 class="toward__number">03</h3>
+              <p class="toward__undertitle">Все приходится делать самостоятельно.</p>
+              <p class="toward__about">Вы постоянно тушите пожары.</p>
+            </li>
+            <li class="toward__item">
+              <span class="elipse"></span>
+              <h3 class="toward__number">04</h3>
+              <p class="toward__undertitle">
+                Вам не хватает 24 часа в сутках, чтобы успеть всё что нужно.
+              </p>
+              <p class="toward__about">Не хватает времени на личную жизнь и отдых.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!--Пакеты услуг-->
-      <!-- <section>
-        <h2>Мои услуги</h2>
-        <li>
-          <article>
-            <img src="" alt="" />
-            <h3>Коучинг собственников бизнеса</h3>
-            <p>
-              Коучинг предполагает серию индивидуальных бесед на протяжении часа, во время которых
-              коуч задает «продвигающие вопросы», а клиент, отвечая на вопросы, приходит к
-              самостоятельному решению своих задач.
-            </p>
-            <a href="">Подробнее</a>
-            <button>Оплатить</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="" alt="" />
-            <h3>Коучинг команд</h3>
-            <p>
-              Консалтинговый продукт, призванный повысить уровень дохода и систематизировать бизнес,
-              включив команду в этот процесс и синхронизировав цели компании с целями каждого
-              сотрудника.
-            </p>
-            <a href="">Подробнее</a>
-            <button>Оплатить</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="" alt="" />
-            <h3>Стратегические сессии</h3>
-            <p>
-              Помогают собственнику бизнеса спланировать долгосрочное развитие компании, например,
-              на 1 год, на 2 или на 3 года вперёд. В ходе стратегической сессии вы определяете ваши
-              цели, а ваши сотрудники формируют вектор развития – то, как они достигнут этих целей.
-            </p>
-            <a href="">Подробнее</a>
-            <button>Оплатить</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="" alt="" />
-            <h3>Командные тренинги</h3>
-            <p>
-              Командный тренинг - инструмент сплочения и развития команды. Тренинг разрабатывается
-              индивидуально под ваш запрос и является уникальным. В нём применяются различные
-              упражнения, техники и игры.
-            </p>
-            <a href="">Подробнее</a>
-            <button>Оплатить</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="" alt="" />
-            <h3>Обучение</h3>
-            <p>Индивидуальное обучение определенным компетенциям под запрос.</p>
-            <a href="">Подробнее</a>
-            <button>Оплатить</button>
-          </article>
-        </li>
-      </section> -->
+      <section class="services">
+        <div class="services__container container">
+          <h2 class="services__title title">Мои <span class="title--accent">услуги</span></h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <article class="services-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel1.webp    1x,
+                      ./images/services/services-img-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel1.jpg    1x,
+                      ./images/services/services-img-tel1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/services/services-img-tel1.jpg"
+                    alt=""
+                    class="services-card__picture"
+                  />
+                </picture>
+
+                <h3 class="services-card__title">Коучинг собственников бизнеса</h3>
+                <p class="services-card__about">
+                  Коучинг предполагает серию индивидуальных бесед на протяжении часа, во время
+                  которых коуч задает «продвигающие вопросы», а клиент, отвечая на вопросы, приходит
+                  к самостоятельному решению своих задач.
+                </p>
+                <a href="" class="services-card__link">Подробнее</a>
+                <button class="services-card__button">Оплатить</button>
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="services-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel2.webp    1x,
+                      ./images/services/services-img-tel2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel2.jpg    1x,
+                      ./images/services/services-img-tel2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/services/services-img-tel2.jpg"
+                    alt=""
+                    class="services-card__picture"
+                  />
+                </picture>
+                <h3 class="services-card__title">Коучинг команд</h3>
+                <p class="services-card__about">
+                  Консалтинговый продукт, призванный повысить уровень дохода и систематизировать
+                  бизнес, включив команду в этот процесс и синхронизировав цели компании с целями
+                  каждого сотрудника.
+                </p>
+                <a href="" class="services-card__link">Подробнее</a>
+                <button class="services-card__button">Оплатить</button>
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="services-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel3.webp    1x,
+                      ./images/services/services-img-tel3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel3.jpg    1x,
+                      ./images/services/services-img-tel3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/services/services-img-tel3.jpg"
+                    alt=""
+                    class="services-card__picture"
+                  />
+                </picture>
+                <h3 class="services-card__title">Стратегические сессии</h3>
+                <p class="services-card__about">
+                  Помогают собственнику бизнеса спланировать долгосрочное развитие компании,
+                  например, на 1 год, на 2 или на 3 года вперёд. В ходе стратегической сессии вы
+                  определяете ваши цели, а ваши сотрудники формируют вектор развития – то, как они
+                  достигнут этих целей.
+                </p>
+                <a href="" class="services-card__link">Подробнее</a>
+                <button class="services-card__button">Оплатить</button>
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="services-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel4.webp    1x,
+                      ./images/services/services-img-tel4@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel4.jpg    1x,
+                      ./images/services/services-img-tel4@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/services/services-img-tel4.jpg"
+                    alt=""
+                    class="services-card__picture"
+                  />
+                </picture>
+                <h3 class="services-card__title">Командные тренинги</h3>
+                <p class="services-card__about">
+                  Командный тренинг - инструмент сплочения и развития команды. Тренинг
+                  разрабатывается индивидуально под ваш запрос и является уникальным. В нём
+                  применяются различные упражнения, техники и игры.
+                </p>
+                <a href="" class="services-card__link">Подробнее</a>
+                <button class="services-card__button">Оплатить</button>
+              </article>
+            </li>
+            <li class="services__item">
+              <article class="services-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel5.webp    1x,
+                      ./images/services/services-img-tel5@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-img-tel5.jpg    1x,
+                      ./images/services/services-img-tel5@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/services/services-img-tel5.jpg"
+                    alt=""
+                    class="services-card__picture"
+                  />
+                </picture>
+                <h3 class="services-card__title">Обучение</h3>
+                <p class="services-card__about">
+                  Индивидуальное обучение определенным компетенциям под запрос.
+                </p>
+                <a href="" class="services-card__link">Подробнее</a>
+                <button class="services-card__button">Оплатить</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!--Заявка на консультацию-->
       <!-- <article>
         <h2>Есть вопросы по процессу коучинга?</h2>
