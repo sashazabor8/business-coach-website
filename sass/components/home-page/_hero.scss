@@ -7,15 +7,15 @@
             background-position: center;
             background-size: cover;
 
-    @media screen and (min-device-pixel-ratio: 2) and (max-width:766px),
-    screen and (min-resolution: 192dpi) and (max-width:766px),
-    screen and (min-resolution: 2dppx) and (max-width:766px) {
+    @media screen and (min-device-pixel-ratio: 2) and (max-width:763px),
+    screen and (min-resolution: 192dpi) and (max-width:763px),
+    screen and (min-resolution: 2dppx) and (max-width:763px) {
         background-image: 
         linear-gradient(180deg, #10203C 0%, rgba(16, 33, 62, 0.92) 100%),
             url(../images/hero/hero-bgc-tel@2x.jpg);
     }
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:764px) {
         background-image:
                 linear-gradient(180deg, #10203C 0%, rgba(16, 33, 62, 0.92) 100%),
                 url(../images/hero/hero-bgc-tablet.jpg);
@@ -23,9 +23,9 @@
                 background-position:center;
     }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width:767px),
-    screen and (min-resolution: 192dpi) and (min-width:767px),
-    screen and (min-resolution: 2dppx) and (min-width:767px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width:764px),
+    screen and (min-resolution: 192dpi) and (min-width:764px),
+    screen and (min-resolution: 2dppx) and (min-width:764px) {
         background-image:
         linear-gradient(180deg, #10203C 0%, rgba(16, 33, 62, 0.92) 100%),
         url(../images/hero/hero-bgc-tablet@2x.jpg);
@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
     filter:blur(180px);
 
-    @media screen and (max-width:766px) {
+    @media screen and (max-width:763px) {
             width: 100%;
             height: 296px;
             bottom: 0;
@@ -68,7 +68,7 @@
             transform: translateX(-50%);
     }
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:764px) {
         width: 371px;
         height: 371px;
         bottom: 60px;
@@ -144,7 +144,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media screen and (max-width:766px) {
+    @media screen and (max-width:763px) {
         bottom: 0;
         right: 50%;
         transform: translateX(50%);
@@ -154,18 +154,18 @@
         margin-left: auto;
         background-position: center;
     }
-    @media screen and (min-device-pixel-ratio: 2) and (max-width:766px),
-        screen and (min-resolution: 192dpi) and (max-width:766px),
-        screen and (min-resolution: 2dppx) and (max-width:766px) {
+    @media screen and (min-device-pixel-ratio: 2) and (max-width:763px),
+        screen and (min-resolution: 192dpi) and (max-width:763px),
+        screen and (min-resolution: 2dppx) and (max-width:763px) {
             background-image:
                 url(../images/hero/hero-img-tel@2x.png);
         }
 
-    @media screen and (min-width:767px) and (max-width:1199px) {
+    @media screen and (min-width:764px) and (max-width:1199px) {
         bottom: 0;
     }
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:764px) {
         height: 566px;
         width: 494px;
         
@@ -173,9 +173,9 @@
         background-image:url(../images/hero/hero-img-tablet.png);
         }
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width:767px),
-    screen and (min-resolution: 192dpi) and (min-width:767px),
-    screen and (min-resolution: 2dppx) and (min-width:767px) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width:764px),
+    screen and (min-resolution: 192dpi) and (min-width:764px),
+    screen and (min-resolution: 2dppx) and (min-width:764px) {
         background-image: url(../images/hero/hero-img-tablet@2x.png); 
     }
 
@@ -199,9 +199,9 @@
     }
 }
 
-//MAX-WIDTH 766PX 
+//MAX-WIDTH 763px 
 
-@media screen and (max-width:766px) {
+@media screen and (max-width:763px) {
     .hero__button {
         width: 100%;
         margin-bottom: 29px;
@@ -212,15 +212,15 @@
     }
 }
 
-//MIN-WIDTH 767PX MAX-WIDTH 1199PX
-@media screen and (min-width:767px) and (max-width:1199px) {
+//MIN-WIDTH 764px MAX-WIDTH 1199PX
+@media screen and (min-width:764px) and (max-width:1199px) {
     .hero__container {
         height: 840px;
     }
 }
 
-//MIN-WIDTH 767PX 
-@media screen and (min-width:767px) {
+//MIN-WIDTH 764px 
+@media screen and (min-width:764px) {
     
     .hero__title {
         margin-bottom: 34px;
