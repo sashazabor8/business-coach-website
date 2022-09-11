@@ -1066,34 +1066,27 @@ img {
   padding-bottom: 55px;
 }
 
-.about__picture {
-  margin-bottom: 27px;
-}
-
 .about__title {
   margin-bottom: 10px;
 }
 
 .about__undertitle--wrap {
   padding: 21px 20px;
-  margin-bottom: 20px;
   border: 1px dashed #16C7E4;
   border-radius: 5px;
 }
 
-.about__undertitle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.388;
-}
-.about__undertitle--accent {
-  color: #16C7E4;
-}
-
-.about__text {
+.about__text, .about__undertitle, .about__item {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.388;
+}
+
+.about__undertitle {
+  font-weight: 700;
+}
+.about__undertitle--accent {
+  color: #16C7E4;
 }
 
 .about__list {
@@ -1102,15 +1095,12 @@ img {
 
 .about__item {
   position: relative;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.388;
-}
-.about__item--bold {
-  font-weight: 700;
 }
 .about__item:not(:last-child) {
   margin-bottom: 30px;
+}
+.about__item--bold {
+  font-weight: 700;
 }
 
 .about__item::before {
@@ -1123,4 +1113,77 @@ img {
   height: 10px;
   border-radius: 50%;
   background-color: #16C7E4;
+}
+
+@media screen and (max-width: 763px) {
+  .about__picture {
+    margin-bottom: 27px;
+  }
+  .about__undertitle--wrap {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 764px) {
+  .about__container {
+    padding-top: 65px;
+    padding-bottom: 63px;
+  }
+  .about__title {
+    margin-bottom: 13px;
+  }
+  .about__list {
+    padding-left: 30px;
+  }
+  .about__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .about__item::before {
+    left: -25px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 764px) and (max-width: 1199px) {
+  .about__container {
+    position: relative;
+  }
+  .about__picture {
+    margin-bottom: 31px;
+  }
+  .about__wrap--right {
+    position: absolute;
+    left: 387px;
+    top: 65px;
+  }
+  .about__undertitle--wrap {
+    width: 347px;
+  }
+  .about__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 31px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__picture {
+    margin-right: 70px;
+  }
+  .about__title {
+    margin-bottom: 5px;
+  }
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about__wrap--desktop {
+    width: 650px;
+    max-height: 630px;
+  }
+  .about__undertitle--wrap {
+    padding: 19px 20px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
