@@ -598,52 +598,294 @@
         </div>
       </section>
       <!--Клиенты-->
-      <section>
-        <ul>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="" alt="" /></a>
-          </li>
-        </ul>
-        <a href="">Все клиенты</a>
+      <section class="clients">
+        <div class="clients__container container">
+          <h2 class="clients__title title">Мои <span class="title--accent">клиенты</span></h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet1.webp    1x,
+                      ./images/clients/clients-image-tablet1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet1.jpg    1x,
+                      ./images/clients/clients-image-tablet1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tel1.webp    1x,
+                      ./images/clients/clients-image-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width:763px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tel1.jpg    1x,
+                      ./images/clients/clients-image-tel1@2x.jpg 2x
+                    "
+                    media="(max-width:763px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet1.jpg "
+                    alt=""
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet2.webp    1x,
+                      ./images/clients/clients-image-tablet2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet2.jpg    1x,
+                      ./images/clients/clients-image-tablet2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet2.jpg"
+                    alt=""
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet3.webp    1x,
+                      ./images/clients/clients-image-tablet3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet3.jpg    1x,
+                      ./images/clients/clients-image-tablet3@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet3.jpg"
+                    alt=""
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet4.webp    1x,
+                      ./images/clients/clients-image-tablet4@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet4.jpg    1x,
+                      ./images/clients/clients-image-tablet4@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet4.jpg"
+                    alt=""
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop5.webp    1x,
+                      ./images/clients/clients-image-desktop5@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop5.jpg    1x,
+                      ./images/clients/clients-image-desktop5@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop5.jpg"
+                    alt=""
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop6.webp    1x,
+                      ./images/clients/clients-image-desktop6@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop6.jpg    1x,
+                      ./images/clients/clients-image-desktop6@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop6.jpg"
+                    alt=""
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop7.webp    1x,
+                      ./images/clients/clients-image-desktop7@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop7.jpg    1x,
+                      ./images/clients/clients-image-desktop7@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop7.jpg"
+                    alt=""
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop8.webp    1x,
+                      ./images/clients/clients-image-desktop8@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop8.jpg    1x,
+                      ./images/clients/clients-image-desktop8@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop8.jpg"
+                    alt=""
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+          </ul>
+          <a href="" class="clients__button">Все клиенты</a>
+        </div>
       </section>
       <!--Отзывы клиентов-->
-      <!-- <section>
-        <h2>Видеоотзывы от клиентов</h2>
-        <ul>
-          <li><button></button></li>
-          <li><button></button></li>
-        </ul>
-        <img src="" alt="" />
-        <h3>Пётр Ковтун</h3>
-        <p>Руководитель компании Opti Taxi.</p>
-        <h4>Результат сотрудничества:</h4>
-        <p>
-          За время работы в командном коучинге: прибыль компании выросла на 17%; валовый доход Opti
-          taxi увеличился на 30% за счёт привлечения новых водителей; водители-партнёры стали
-          лояльнее относится к компании; вышли на рынок Польши.
-        </p>
-      </section> -->
+      <section class="reviews">
+        <div class="reviews__container container">
+          <div class="reviews__wrap--top">
+            <h2 class="reviews__title title">
+              <span class="title--accent">Видеоотзывы</span> от клиентов
+            </h2>
+            <ul class="reviews__list reviews__list--tablet switches__list">
+              <li class="reviews__item switches__item">
+                <button class="reviews__button switch">
+                  <svg class="switch__image">
+                    <use href="./images/sprite-1.svg#icon-arrow-2"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="reviews__item switches__item">
+                <button class="switch">
+                  <svg class="switch__image">
+                    <use href="./images/sprite-1.svg#icon-arrow-1"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reviews-video">
+            <button type="button" class="reviews-video__button">
+              <svg width="24px" height="24px">
+                <use href="./images/sprite-1.svg#icon-play"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews__wrap">
+            <h3 class="reviews__undertitle">Пётр Ковтун</h3>
+            <p class="reviews__about">Руководитель компании Opti Taxi.</p>
+            <p class="reviews__text--bold">Результат сотрудничества:</p>
+            <p class="reviews__text">
+              За время работы в командном коучинге: прибыль компании выросла на 17%; валовый доход
+              Opti taxi увеличился на 30% за счёт привлечения новых водителей; водители-партнёры
+              стали лояльнее относится к компании; вышли на рынок Польши.
+            </p>
+          </div>
+          <ul class="reviews__list reviews__list--tel switches__list">
+            <li class="reviews__item switches__item">
+              <button class="reviews__button switch">
+                <svg width="19px" height="19px">
+                  <use href="./images/sprite-1.svg#icon-arrow-2"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="reviews__item switches__item">
+              <button class="switch">
+                <svg width="19px" height="19px">
+                  <use href="./images/sprite-1.svg#icon-arrow-1"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!--Блог коуча-->
       <!-- <section>
         <h2>Мой блог</h2>
