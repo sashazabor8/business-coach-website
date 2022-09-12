@@ -11,6 +11,10 @@
     display: flex; 
 }
 
+.clients__item {
+    cursor: pointer;
+}
+
 .clients__button {
         padding-top: 16px;
         padding-bottom: 16px;
