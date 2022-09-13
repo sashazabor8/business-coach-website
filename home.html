@@ -20,8 +20,8 @@
   <body>
     <!--Шапка сайта-->
     <header class="header container">
-      <a href="./home.html" class="header__logo">
-        <svg class="header__image">
+      <a href="./home.html" class="header__logo logo">
+        <svg class="logo__image">
           <use href="./images/sprite-1.svg#icon-LOGO"></use>
         </svg>
       </a>
@@ -54,31 +54,43 @@
             </li>
           </ul>
         </nav>
-        <ul class="social-links">
-          <li class="social-links__item">
-            <a href="https://www.instagram.com/" class="social-links__link">
-              <svg width="24px" height="24px" class="social-links__image">
+        <ul class="header__social-links social-links">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.instagram.com/"
+              class="social-links__link header__social-links__link"
+            >
+              <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item">
-            <a href="https://web.telegram.org/k/" class="social-links__link">
-              <svg width="24px" height="24px" class="social-links__image">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://web.telegram.org/k/"
+              class="social-links__link header__social-links__link"
+            >
+              <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item">
-            <a href="https://www.whatsapp.com/" class="social-links__link">
-              <svg width="24px" height="24px" class="social-links__image">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.whatsapp.com/"
+              class="social-links__link header__social-links__link"
+            >
+              <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item">
-            <a href="https://www.youtube.com/" class="social-links__link">
-              <svg width="24px" height="24px" class="social-links__image">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.youtube.com/"
+              class="social-links__link header__social-links__link"
+            >
+              <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -1060,63 +1072,149 @@
         </div>
       </section>
     </main>
-    <!-- <footer>
-      <a href="./home.html">LOGO</a>
-      <ul>
-        <li>
-          <a href="">Instagram</a>
-        </li>
-        <li>
-          <a href="">Telegram</a>
-        </li>
-        <li>
-          <a href="">Viber</a>
-        </li>
-        <li>
-          <a href="">Youtube</a>
-        </li>
-      </ul>
-      <b>Услуги</b>
-      <ul>
-        <li>
-          <a href="">Коучинг собственников бизнеса</a>
-        </li>
-        <li>
-          <a href="">Стратегические сессии</a>
-        </li>
-        <li>
-          <a href="">Командные тренинги</a>
-        </li>
-        <li>
-          <a href="">Коучинг команд</a>
-        </li>
-        <li>
-          <a href="">Обучение</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">ОБО МНЕ</a>
-        </li>
-        <li>
-          <a href="">КЛИЕНТЫ</a>
-        </li>
-        <li>
-          <a href="">БЛОГ</a>
-        </li>
-      </ul>
-      <address>
-        <p>КОНТАКТЫ</p>
-        <ul>
-          <li>
-            <a href="">syomochkin@gmail.com</a>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrap--telnone">
+          <a href="./home.html" class="footer__logo logo">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <b class="footer-services">Услуги</b>
+        <ul class="footer-services__list">
+          <li class="footer-services__item">
+            <a href="" class="footer-services__link">Коучинг собственников бизнеса</a>
           </li>
-          <li>
-            <a href="">+38 (097) 757-11-89</a>
+          <li class="footer-services__item">
+            <a href="" class="footer-services__link">Стратегические сессии</a>
+          </li>
+          <li class="footer-services__item">
+            <a href="" class="footer-services__link">Командные тренинги</a>
+          </li>
+          <li class="footer-services__item">
+            <a href="" class="footer-services__link">Коучинг команд</a>
+          </li>
+          <li class="footer-services__item">
+            <a href="" class="footer-services__link">Обучение</a>
           </li>
         </ul>
-      </address>
-    </footer> -->
+        <ul class="footer__menu">
+          <li class="footer__menu__item">
+            <a href="" class="footer__menu__link">ОБО МНЕ</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="" class="footer__menu__link">КЛИЕНТЫ</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="" class="footer__menu__link">БЛОГ</a>
+          </li>
+        </ul>
+        <address class="address">
+          <p class="address__text">КОНТАКТЫ</p>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="" class="address__link">syomochkin@gmail.com</a>
+            </li>
+            <li class="address__item">
+              <a href="" class="address__link">+38 (097) 757-11-89</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer__wrap--tablnone">
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="./home.html" class="footer__logo logo">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="./js/menu.js"></script>
   </body>
 </html>

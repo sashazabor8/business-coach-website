@@ -2,7 +2,9 @@
 @import './utils/variables';
 @import './base/common';
 @import './base/specail-classes';
+
 @import './layout/header';
+
 @import './components/home-page/hero';
 @import './components/home-page/toward';
 @import './components/home-page/services';
@@ -11,3 +13,5 @@
 @import './components/home-page/clients';
 @import './components/home-page/reviews';
 @import './components/home-page/blog';
+
+@import './layout/footer';
