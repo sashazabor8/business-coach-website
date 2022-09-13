@@ -891,51 +891,168 @@
       <!--Блог коуча-->
       <section class="blog">
         <div class="blog__container container">
-          <h2 class="blog__title title">Мой <span class="title--accent">блог</span></h2>
-          <ul class="blog-switches switches__list">
-            <li class="blog-switches__item switches__item">
-              <button class="blog-switches__button switch">
-                <svg class="blog-switches__image switch__image">
-                  <use href="./images/sprite-1.svg#icon-arrow-2"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="blog-switches__item switches__item">
-              <button class="blog-switches__button switch">
-                <svg class="blog-switches__image switch__image">
-                  <use href="./images/sprite-1.svg#icon-arrow-1"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
+          <div class="blog__wrap-top">
+            <h2 class="blog__title title">Мой <span class="title--accent">блог</span></h2>
+            <ul class="blog-switches switches__list">
+              <li class="blog-switches__item switches__item">
+                <button class="blog-switches__button switch">
+                  <svg class="blog-switches__image switch__image">
+                    <use href="./images/sprite-1.svg#icon-arrow-2"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="blog-switches__item switches__item">
+                <button class="blog-switches__button switch">
+                  <svg class="blog-switches__image switch__image">
+                    <use href="./images/sprite-1.svg#icon-arrow-1"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
           <ul class="blog__list">
             <li class="blog__item">
-              <article class="blog-article">
-                <img src="" alt="" class="blog-article__picture" />
-                <h3 class="blog-article__title">Ценности компании</h3>
-                <p class="blog-article__about">Для чего нужны корпоративные ценности?</p>
-                <time class="blog-article__time">23.03.2021</time>
+              <article class="blog-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop1.webp    1x,
+                      ./images/blog/blog-picture-desktop1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop1.jpg    1x,
+                      ./images/blog/blog-picture-desktop1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl1.webp    1x,
+                      ./images/blog/blog-picture-tabl1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl1.jpg    1x,
+                      ./images/blog/blog-picture-tabl1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tel1.webp    1x,
+                      ./images/blog/blog-picture-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width:763px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tel1.jpg    1x,
+                      ./images/blog/blog-picture-tel1@2x.jpg 2x
+                    "
+                    media="(max-width:763px)"
+                  />
+                  <img
+                    src="./images/blog/blog-picture-tabl1.jpg"
+                    alt=""
+                    class="blog-card__picture"
+                  />
+                </picture>
+                <div class="blog-card__wrap">
+                  <h3 class="blog-card__title">Ценности компании</h3>
+                  <p class="blog-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="blog-card__time">23.03.2021</time>
+                </div>
               </article>
             </li>
-            <li class="blog__item">
-              <article class="blog-article">
-                <img src="" alt="" class="blog-article__picture" />
-                <h3 class="blog-article__title">Воронка подбора персонала</h3>
-                <p class="blog-article__about">Для чего нужны корпоративные ценности?</p>
-                <time class="blog-article__time">23.03.2021</time>
+            <li class="blog__item blog__item--tel-none">
+              <article class="blog-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop2.webp    1x,
+                      ./images/blog/blog-picture-desktop2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop2.jpg    1x,
+                      ./images/blog/blog-picture-desktop2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl2.webp    1x,
+                      ./images/blog/blog-picture-tabl2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl2.jpg    1x,
+                      ./images/blog/blog-picture-tabl2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/blog/blog-picture-tabl2.jpg"
+                    alt=""
+                    class="blog-card__picture"
+                  />
+                </picture>
+                <div class="blog-card__wrap">
+                  <h3 class="blog-card__title">Воронка подбора персонала</h3>
+                  <p class="blog-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="blog-card__time">23.03.2021</time>
+                </div>
               </article>
             </li>
-            <li class="blog__item">
-              <article class="blog-article">
-                <img src="" alt="" class="blog-article__picture" />
-                <h3 class="blog-article__title">
-                  Как поддерживать мотивацию сотрудников во время карантина
-                </h3>
-                <p class="blog-article__about">
-                  Сегодня рассмотрим несколько факторов, которые помогут не только поддержать
-                  мотивацию ваших сотрудников, а и повысить её эффективность в несколько раз.
-                </p>
-                <time class="blog-article__time">23.03.2021</time>
+            <li class="blog__item blog__item--tabl-none">
+              <article class="blog-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop3.webp    1x,
+                      ./images/blog/blog-picture-desktop3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop3.jpg    1x,
+                      ./images/blog/blog-picture-desktop3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/blog/blog-picture-desktop3.jpg"
+                    alt=""
+                    class="blog-card__picture"
+                  />
+                </picture>
+                <div class="blog-card__wrap">
+                  <h3 class="blog-card__title">
+                    Как поддерживать мотивацию сотрудников во время карантина
+                  </h3>
+                  <p class="blog-card__about">
+                    Сегодня рассмотрим несколько факторов, которые помогут не только поддержать
+                    мотивацию ваших сотрудников, а и повысить её эффективность в несколько раз.
+                  </p>
+                  <time class="blog-card__time">23.03.2021</time>
+                </div>
               </article>
             </li>
           </ul>
