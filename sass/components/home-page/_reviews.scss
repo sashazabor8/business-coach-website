@@ -1,5 +1,8 @@
 .reviews {
     background-color: $grey-bgc-color;
+        max-width: 1920px;
+            margin-right: auto;
+            margin-left: auto;
 }
 
 .reviews__container {
@@ -12,8 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 183px;
-    width: 100%;
+    min-height: 183px;
     margin-bottom: 20px;
     border-radius: 5px;
 

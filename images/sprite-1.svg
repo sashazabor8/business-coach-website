@@ -64,5 +64,8 @@
 <symbol id="icon-play" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.56" d="M6.734 8.236c0-0 0-0 0-0 0-1.060 0.86-1.92 1.92-1.92 0.366 0 0.708 0.102 0.999 0.28l-0.008-0.005 13.229 7.972c0.561 0.342 0.93 0.95 0.93 1.645s-0.369 1.303-0.921 1.64l-0.008 0.005-13.229 7.972c-0.283 0.173-0.625 0.275-0.991 0.275-1.060 0-1.92-0.86-1.92-1.92 0-0 0-0 0-0v0-15.944z"></path>
 </symbol>
+<symbol id="icon-Plus-modal" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M16 4v24M4 16h24"></path>
+</symbol>
 </defs>
 </svg>

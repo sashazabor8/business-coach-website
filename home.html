@@ -20,12 +20,17 @@
   <body>
     <!--Шапка сайта-->
     <header class="header container">
-      <a href="./home.html" class="header__logo logo">
+      <a href="./home.html" class="header__logo logo" aria-label="логотип компании">
         <svg class="logo__image">
           <use href="./images/sprite-1.svg#icon-LOGO"></use>
         </svg>
       </a>
-      <button type="button" class="mobile-button" data-menu-button>
+      <button
+        type="button"
+        class="mobile-button"
+        aria-label="кнопка открытия и закрытия мобильного меню"
+        data-menu-button
+      >
         <svg width="48px" height="48px" class="mobile-button__image">
           <use href="./images/sprite-1.svg#icon-mobile-menu" class="mobile-button__open"></use>
           <use
@@ -59,6 +64,7 @@
             <a
               href="https://www.instagram.com/"
               class="social-links__link header__social-links__link"
+              aria-label="иконка Инстаграм"
             >
               <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-instagram"></use>
@@ -69,6 +75,7 @@
             <a
               href="https://web.telegram.org/k/"
               class="social-links__link header__social-links__link"
+              aria-label="иконка Телеграм"
             >
               <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-telegram"></use>
@@ -79,6 +86,7 @@
             <a
               href="https://www.whatsapp.com/"
               class="social-links__link header__social-links__link"
+              aria-label="иконка Ватцап"
             >
               <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-whatsapp"></use>
@@ -89,6 +97,7 @@
             <a
               href="https://www.youtube.com/"
               class="social-links__link header__social-links__link"
+              aria-label="иконка Ютуб"
             >
               <svg class="social-links__image header__social-links__image">
                 <use href="./images/sprite-1.svg#icon-youtube"></use>
@@ -114,7 +123,7 @@
               Узнайте <span class="hero__text--neon">как преодолеть застой </span>в результатах и
               добиться новых высот
             </p>
-            <button class="hero__button">КОНСУЛЬТАЦИЯ</button>
+            <button type="button" class="hero__button">КОНСУЛЬТАЦИЯ</button>
           </div>
         </div>
       </section>
@@ -212,7 +221,7 @@
                   />
                   <img
                     src="./images/services/services-img-tel1.jpg"
-                    alt=""
+                    alt="бизнес-партнеры жмут друг другу руки"
                     class="services-card__picture"
                   />
                 </picture>
@@ -224,7 +233,7 @@
                     приходит к самостоятельному решению своих задач.
                   </p>
                   <a href="" class="services-card__link">Подробнее</a>
-                  <button class="services-card__button">Оплатить</button>
+                  <button type="button" class="services-card__button">Оплатить</button>
                 </div>
               </article>
             </li>
@@ -278,7 +287,7 @@
                   />
                   <img
                     src="./images/services/services-img-tel2.jpg"
-                    alt=""
+                    alt="довольная команда работников"
                     class="services-card__picture"
                   />
                 </picture>
@@ -290,7 +299,9 @@
                     каждого сотрудника.
                   </p>
                   <a href="" class="services-card__link">Подробнее</a>
-                  <button class="services-card__button">Оплатить</button>
+                  <button type="button" class="services-card__button" data-modal-open>
+                    Оплатить
+                  </button>
                 </div>
               </article>
             </li>
@@ -344,7 +355,7 @@
                   />
                   <img
                     src="./images/services/services-img-tel3.jpg"
-                    alt=""
+                    alt="мужчина показывает коллегам рабочую диаграмму"
                     class="services-card__picture"
                   />
                 </picture>
@@ -357,7 +368,7 @@
                     достигнут этих целей.
                   </p>
                   <a href="" class="services-card__link">Подробнее</a>
-                  <button class="services-card__button">Оплатить</button>
+                  <button type="button" class="services-card__button">Оплатить</button>
                 </div>
               </article>
             </li>
@@ -411,7 +422,7 @@
                   />
                   <img
                     src="./images/services/services-img-tel4.jpg"
-                    alt=""
+                    alt="люди работают в команде"
                     class="services-card__picture"
                   />
                 </picture>
@@ -423,7 +434,7 @@
                     применяются различные упражнения, техники и игры.
                   </p>
                   <a href="" class="services-card__link">Подробнее</a>
-                  <button class="services-card__button">Оплатить</button>
+                  <button type="button" class="services-card__button">Оплатить</button>
                 </div>
               </article>
             </li>
@@ -477,7 +488,7 @@
                   />
                   <img
                     src="./images/services/services-img-tel5.jpg"
-                    alt=""
+                    alt="совместное обучение людей"
                     class="services-card__picture"
                   />
                 </picture>
@@ -487,7 +498,7 @@
                     Индивидуальное обучение определенным компетенциям под запрос.
                   </p>
                   <a href="" class="services-card__link">Подробнее</a>
-                  <button class="services-card__button">Оплатить</button>
+                  <button type="button" class="services-card__button">Оплатить</button>
                 </div>
               </article>
             </li>
@@ -566,7 +577,11 @@
               srcset="./images/about/about-img-tel.jpg 1x, ./images/about/about-img-tel@2x.jpg 2x"
               media="(max-width:763px)"
             />
-            <img src="./images/about/about-img-tel.jpg" alt="" class="about__picture" />
+            <img
+              src="./images/about/about-img-tel.jpg"
+              alt="Портрет Ивана Надоенко"
+              class="about__picture"
+            />
           </picture>
           <div class="about__wrap--desktop">
             <div class="about__wrap--right">
@@ -649,7 +664,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-tablet1.jpg "
-                    alt=""
+                    alt="магазин Покупон"
                     class="clients__picture"
                   />
                 </picture>
@@ -675,7 +690,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-tablet2.jpg"
-                    alt=""
+                    alt="фирма G-bar"
                     class="clients__picture"
                   />
                 </picture>
@@ -701,7 +716,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-tablet3.jpg"
-                    alt=""
+                    alt="магазин Intertop"
                     class="clients__picture"
                   /> </picture
               ></a>
@@ -726,7 +741,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-tablet4.jpg"
-                    alt=""
+                    alt="cтудия ASA"
                     class="clients__picture"
                   />
                 </picture>
@@ -752,7 +767,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-desktop5.jpg"
-                    alt=""
+                    alt="магазин Opti"
                     class="clients__picture"
                   />
                 </picture>
@@ -778,7 +793,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-desktop6.jpg"
-                    alt=""
+                    alt="фирма Yoola"
                     class="clients__picture"
                   />
                 </picture>
@@ -804,7 +819,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-desktop7.jpg"
-                    alt=""
+                    alt="магазин pandora"
                     class="clients__picture"
                   /> </picture
               ></a>
@@ -829,7 +844,7 @@
                   />
                   <img
                     src="./images/clients/clients-image-desktop8.jpg"
-                    alt=""
+                    alt="компания Grace Agro"
                     class="clients__picture"
                   /> </picture
               ></a>
@@ -847,14 +862,22 @@
             </h2>
             <ul class="reviews__list reviews__list--tablet switches__list">
               <li class="reviews__item switches__item">
-                <button class="reviews__button switch">
+                <button
+                  type="button"
+                  class="reviews__button switch"
+                  aria-label="кнопка переключения видеоотзывов"
+                >
                   <svg class="switch__image">
                     <use href="./images/sprite-1.svg#icon-arrow-2"></use>
                   </svg>
                 </button>
               </li>
               <li class="reviews__item switches__item">
-                <button class="switch">
+                <button
+                  type="button"
+                  class="reviews__button switch"
+                  aria-label="кнопка переключения видеоотзывов"
+                >
                   <svg class="switch__image">
                     <use href="./images/sprite-1.svg#icon-arrow-1"></use>
                   </svg>
@@ -884,14 +907,14 @@
 
           <ul class="reviews__list reviews__list--tel switches__list">
             <li class="reviews__item switches__item">
-              <button class="reviews__button switch">
+              <button type="button" class="reviews__button switch" aria-label="кнопка плей">
                 <svg width="19px" height="19px">
                   <use href="./images/sprite-1.svg#icon-arrow-2"></use>
                 </svg>
               </button>
             </li>
             <li class="reviews__item switches__item">
-              <button class="switch">
+              <button type="button" class="switch">
                 <svg width="19px" height="19px">
                   <use href="./images/sprite-1.svg#icon-arrow-1"></use>
                 </svg>
@@ -907,14 +930,22 @@
             <h2 class="blog__title title">Мой <span class="title--accent">блог</span></h2>
             <ul class="blog-switches switches__list">
               <li class="blog-switches__item switches__item">
-                <button class="blog-switches__button switch">
+                <button
+                  type="button"
+                  class="blog-switches__button switch"
+                  aria-label="кнопка переключения блогов"
+                >
                   <svg class="blog-switches__image switch__image">
                     <use href="./images/sprite-1.svg#icon-arrow-2"></use>
                   </svg>
                 </button>
               </li>
               <li class="blog-switches__item switches__item">
-                <button class="blog-switches__button switch">
+                <button
+                  type="button"
+                  class="blog-switches__button switch"
+                  aria-label="кнопка переключения блогов"
+                >
                   <svg class="blog-switches__image switch__image">
                     <use href="./images/sprite-1.svg#icon-arrow-1"></use>
                   </svg>
@@ -974,7 +1005,7 @@
                   />
                   <img
                     src="./images/blog/blog-picture-tabl1.jpg"
-                    alt=""
+                    alt="работинки обсуждают цели компании"
                     class="blog-card__picture"
                   />
                 </picture>
@@ -1020,7 +1051,7 @@
                   />
                   <img
                     src="./images/blog/blog-picture-tabl2.jpg"
-                    alt=""
+                    alt="люди поднимаются наверх"
                     class="blog-card__picture"
                   />
                 </picture>
@@ -1051,7 +1082,7 @@
                   />
                   <img
                     src="./images/blog/blog-picture-desktop3.jpg"
-                    alt=""
+                    alt="довольные работники"
                     class="blog-card__picture"
                   />
                 </picture>
@@ -1075,7 +1106,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__wrap--telnone">
-          <a href="./home.html" class="footer__logo logo">
+          <a href="./home.html" class="footer__logo logo" aria-label="Логотип компании">
             <svg class="logo__image">
               <use href="./images/sprite-1.svg#icon-LOGO"></use>
             </svg>
@@ -1085,6 +1116,7 @@
               <a
                 href="https://www.instagram.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-instagram"></use>
@@ -1095,6 +1127,7 @@
               <a
                 href="https://web.telegram.org/k/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-telegram"></use>
@@ -1105,6 +1138,7 @@
               <a
                 href="https://www.whatsapp.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-whatsapp"></use>
@@ -1115,6 +1149,7 @@
               <a
                 href="https://www.youtube.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-youtube"></use>
@@ -1123,25 +1158,26 @@
             </li>
           </ul>
         </div>
-
-        <b class="footer-services">Услуги</b>
-        <ul class="footer-services__list">
-          <li class="footer-services__item">
-            <a href="" class="footer-services__link">Коучинг собственников бизнеса</a>
-          </li>
-          <li class="footer-services__item">
-            <a href="" class="footer-services__link">Стратегические сессии</a>
-          </li>
-          <li class="footer-services__item">
-            <a href="" class="footer-services__link">Командные тренинги</a>
-          </li>
-          <li class="footer-services__item">
-            <a href="" class="footer-services__link">Коучинг команд</a>
-          </li>
-          <li class="footer-services__item">
-            <a href="" class="footer-services__link">Обучение</a>
-          </li>
-        </ul>
+        <div class="footer-services">
+          <b class="footer-services__title">Услуги</b>
+          <ul class="footer-services__list">
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг собственников бизнеса</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Стратегические сессии</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Командные тренинги</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг команд</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Обучение</a>
+            </li>
+          </ul>
+        </div>
         <ul class="footer__menu">
           <li class="footer__menu__item">
             <a href="" class="footer__menu__link">ОБО МНЕ</a>
@@ -1153,6 +1189,7 @@
             <a href="" class="footer__menu__link">БЛОГ</a>
           </li>
         </ul>
+
         <address class="address">
           <p class="address__text">КОНТАКТЫ</p>
           <ul class="address__list">
@@ -1170,6 +1207,7 @@
               <a
                 href="https://www.instagram.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-instagram"></use>
@@ -1180,6 +1218,7 @@
               <a
                 href="https://web.telegram.org/k/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-telegram"></use>
@@ -1190,6 +1229,7 @@
               <a
                 href="https://www.whatsapp.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-whatsapp"></use>
@@ -1200,6 +1240,7 @@
               <a
                 href="https://www.youtube.com/"
                 class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
               >
                 <svg class="footer__social-links__image social-links__image">
                   <use href="./images/sprite-1.svg#icon-youtube"></use>
@@ -1207,7 +1248,7 @@
               </a>
             </li>
           </ul>
-          <a href="./home.html" class="footer__logo logo">
+          <a href="./home.html" class="footer__logo logo" aria-label="логотип компании">
             <svg class="logo__image">
               <use href="./images/sprite-1.svg#icon-LOGO"></use>
             </svg>
@@ -1215,6 +1256,55 @@
         </div>
       </div>
     </footer>
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="container">
+        <div class="modal">
+          <h2 class="modal__title">
+            <span class="modal__title--accent">ОПЛАТИТЬ</span> КОМАНДНЫЕ ТРЕНИНГИ
+          </h2>
+          <button class="modal__close" data-modal-close>
+            <svg class="modal__cross">
+              <use href="./images/sprite-1.svg#icon-mobile-close-menu"></use>
+            </svg>
+          </button>
+          <p class="modal__price">Стоимость:<b class="modal__price--number">10 000 грн.</b></p>
+          <p class="modal__undertitle">Как оплатить?</p>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <button type="button" class="modal__button accordion">Оплата через QRкод</button>
+              <div class="modal__panel panel">
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </li>
+            <li class="modal__item">
+              <button type="button" class="modal__button accordion">Оплата через Робокасса</button>
+              <div class="modal__panel panel">
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <picture>
+            <source srcset="./images/modal/qrcode-tel.webp" type="image/webp" />
+            <img src="./images/modal/qrcode-tel.jpg" alt="qrcode" class="modal__code" />
+          </picture>
+          <p class="modal__wodrs">наведите камеру телефона</p>
+          <p class="modal__word">или</p>
+          <a href="" class="modal__link">Оплата через РОБОКАССА</a>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/menu.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

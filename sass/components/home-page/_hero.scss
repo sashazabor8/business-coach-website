@@ -1,5 +1,8 @@
 .hero {
     position: relative;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
     background:
     linear-gradient(180deg, #10203C 0%, rgba(16, 33, 62, 0.92) 100%, ),
     url(../images/hero/hero-bgc-tel.jpg), #182C4E;
