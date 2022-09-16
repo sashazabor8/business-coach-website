@@ -43,7 +43,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="" class="navigation__link">Обо мне</a>
+              <a href="./about.html" class="navigation__link">Обо мне</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Услуги</a>
@@ -1178,15 +1178,15 @@
             </li>
           </ul>
         </div>
-        <ul class="footer__menu">
-          <li class="footer__menu__item">
-            <a href="" class="footer__menu__link">ОБО МНЕ</a>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a href="./about.html" class="footer-menu__link">ОБО МНЕ</a>
           </li>
-          <li class="footer__menu__item">
-            <a href="" class="footer__menu__link">КЛИЕНТЫ</a>
+          <li class="footer-menu__item">
+            <a href="" class="footer-menu__link">КЛИЕНТЫ</a>
           </li>
-          <li class="footer__menu__item">
-            <a href="" class="footer__menu__link">БЛОГ</a>
+          <li class="footer-menu__item">
+            <a href="" class="footer-menu__link">БЛОГ</a>
           </li>
         </ul>
 
@@ -1258,10 +1258,11 @@
     </footer>
     <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
-      <div class="container">
+      <div class="backdrop__container container">
         <div class="modal">
           <h2 class="modal__title">
-            <span class="modal__title--accent">ОПЛАТИТЬ</span> КОМАНДНЫЕ ТРЕНИНГИ
+            <span class="modal__title--accent">ОПЛАТИТЬ</span><br />
+            КОМАНДНЫЕ ТРЕНИНГИ
           </h2>
           <button class="modal__close" data-modal-close>
             <svg class="modal__cross">
@@ -1292,13 +1293,37 @@
               </div>
             </li>
           </ul>
-          <picture>
-            <source srcset="./images/modal/qrcode-tel.webp" type="image/webp" />
-            <img src="./images/modal/qrcode-tel.jpg" alt="qrcode" class="modal__code" />
-          </picture>
-          <p class="modal__wodrs">наведите камеру телефона</p>
-          <p class="modal__word">или</p>
-          <a href="" class="modal__link">Оплата через РОБОКАССА</a>
+          <div class="modal-wrap">
+            <div class="modal-wrap__left">
+              <picture>
+                <source
+                  srcset="./images/modal/qrcode-tabl.webp 1x, ./images/modal/qrcode-tabl@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width:764px)"
+                />
+                <source
+                  srcset="./images/modal/qrcode-tabl.jpg 1x, ./images/modal/qrcode-tabl@2x.jpg 2x"
+                  media="(min-width:764px)"
+                />
+                <source
+                  srcset="./images/modal/qrcode-tel.webp 1x, ./images/modal/qrcode-tel@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width:763px)"
+                />
+                <source
+                  srcset="./images/modal/qrcode-tel.jpg 1x, ./images/modal/qrcode-tel@2x.jpg 2x"
+                  media="(max-width:763px)"
+                />
+                <img src="./images/modal/qrcode-tel.jpg" alt="qrcode" class="modal__code" />
+              </picture>
+
+              <p class="modal__wodrs">наведите камеру телефона</p>
+            </div>
+            <div class="modal-wrap__right">
+              <p class="modal__word">или</p>
+              <a href="" class="modal__link">Оплата через РОБОКАССА</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

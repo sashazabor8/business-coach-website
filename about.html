@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="about-header header container">
+      <a href="./home.html" class="header__logo logo" aria-label="логотип компании">
+        <svg class="logo__image">
+          <use href="./images/sprite-1.svg#icon-LOGO"></use>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="mobile-button"
+        aria-label="кнопка открытия и закрытия мобильного меню"
+        data-menu-button
+      >
+        <svg width="48px" height="48px" class="mobile-button__image">
+          <use href="./images/sprite-1.svg#icon-mobile-menu" class="mobile-button__open"></use>
+          <use
+            href="./images/sprite-1.svg#icon-mobile-close-menu"
+            class="mobile-button__close"
+          ></use>
+        </svg>
+      </button>
+      <div class="header__mobile-menu" data-menu>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./about.html" class="navigation__link navigation__link--current">Обо мне</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Статьи</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__social-links social-links">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.instagram.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Инстаграм"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://web.telegram.org/k/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Телеграм"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.whatsapp.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Ватцап"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.youtube.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Ютуб"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="link-list__container container">
+        <ul class="link-list">
+          <li class="link-list__item">
+            <a href="" class="link-list__link">Главная</a>
+          </li>
+          <li class="link-list__item">
+            <a href="" class="link-list__link">Обо мне</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="about-me">
+        <div class="about-me__container container">
+          <h2 class="about-me__title title">ОБО <span class="title--accent">МНЕ</span></h2>
+          <img src="" alt="" class="about-me__picture" />
+          <p class="about-me__text">
+            Меня зовут <span class="about-me__text--accent">Надоенко Иван Александрович. </span>Я
+            бизнес-коуч, эксперт в систематизации бизнеса и построении сильных команд.
+          </p>
+          <p class="desc">
+            Я помогаю повысить доход компании за счёт коучинга собственников бизнеса и
+            систематизации бизнеса, посредством включения команды в этот процесс.
+          </p>
+          <ul class="about-experience">
+            <li class="about-experience__item">
+              <svg>
+                <use></use>
+              </svg>
+              <h3 class="about-experience__title">4 года</h3>
+              <p class="about-experience__text">
+                постоянной ежедневной практики коучинга с собственниками бизнеса, на практических
+                кейсах, дают возможность понять боль собственников и руководителей и помочь им
+                самостоятельно ее решить.
+              </p>
+            </li>
+            <li class="about-experience__item">
+              <svg>
+                <use></use>
+              </svg>
+              <h3 class="about-experience__title">7 ЛЕТ</h3>
+              <p class="about-experience__text">
+                опыта в области оценки персонала даёт мне возможность разработать лучший формат и
+                стиль коучинга индивидуально под каждого собственника бизнеса и руководителя.
+              </p>
+            </li>
+            <li class="about-experience__item">
+              <svg>
+                <use></use>
+              </svg>
+              <h3 class="about-experience__title">6 лет</h3>
+              <p class="about-experience__text">
+                работы в компании Бизнес-Конструктор дали высокую экспертизу в области
+                систематизации бизнеса, что является дополнительной выгодой в коучинге с мной и моей
+                командой.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients-team">
+        <div class="clients-team__container container">
+          <h2 class="clients-team__title title">
+            Фото с <span class="title--accent">командами клиентов</span>
+          </h2>
+          <ul class="switches__list">
+            <li class="switches__item">
+              <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
+                <svg class="switch__image">
+                  <use href="./images/sprite-1.svg#icon-arrow-2"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="switches__item">
+              <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
+                <svg class="switch__image">
+                  <use href="./images/sprite-1.svg#icon-arrow-1"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="team-cards">
+            <li class="team-cards__item">
+              <img src="" alt="" class="team-cards__picture" />
+              <p class="team-cards__about">
+                Zoetis. Крупнейший в мире производитель лекарств для домашних животных
+              </p>
+            </li>
+            <li class="team-cards__item">
+              <img src="" alt="" class="team-cards__picture" />
+              <p class="team-cards__about">
+                Zoetis. Крупнейший в мире производитель лекарств для домашних животных
+              </p>
+            </li>
+            <li class="team-cards__item">
+              <img src="" alt="" class="team-cards__picture" />
+              <p class="team-cards__about">
+                Zoetis. Крупнейший в мире производитель лекарств для домашних животных
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="clients__container container">
+          <h2 class="clients__title title">Мои <span class="title--accent">клиенты</span></h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet1.webp    1x,
+                      ./images/clients/clients-image-tablet1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet1.jpg    1x,
+                      ./images/clients/clients-image-tablet1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tel1.webp    1x,
+                      ./images/clients/clients-image-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width:763px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tel1.jpg    1x,
+                      ./images/clients/clients-image-tel1@2x.jpg 2x
+                    "
+                    media="(max-width:763px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet1.jpg "
+                    alt="магазин Покупон"
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet2.webp    1x,
+                      ./images/clients/clients-image-tablet2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet2.jpg    1x,
+                      ./images/clients/clients-image-tablet2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet2.jpg"
+                    alt="фирма G-bar"
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet3.webp    1x,
+                      ./images/clients/clients-image-tablet3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet3.jpg    1x,
+                      ./images/clients/clients-image-tablet3@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet3.jpg"
+                    alt="магазин Intertop"
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet4.webp    1x,
+                      ./images/clients/clients-image-tablet4@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-tablet4.jpg    1x,
+                      ./images/clients/clients-image-tablet4@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-tablet4.jpg"
+                    alt="cтудия ASA"
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop5.webp    1x,
+                      ./images/clients/clients-image-desktop5@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop5.jpg    1x,
+                      ./images/clients/clients-image-desktop5@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop5.jpg"
+                    alt="магазин Opti"
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop6.webp    1x,
+                      ./images/clients/clients-image-desktop6@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop6.jpg    1x,
+                      ./images/clients/clients-image-desktop6@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop6.jpg"
+                    alt="фирма Yoola"
+                    class="clients__picture"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop7.webp    1x,
+                      ./images/clients/clients-image-desktop7@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop7.jpg    1x,
+                      ./images/clients/clients-image-desktop7@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop7.jpg"
+                    alt="магазин pandora"
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
+              <a href="" class="clients__link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop8.webp    1x,
+                      ./images/clients/clients-image-desktop8@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/clients/clients-image-desktop8.jpg    1x,
+                      ./images/clients/clients-image-desktop8@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/clients/clients-image-desktop8.jpg"
+                    alt="компания Grace Agro"
+                    class="clients__picture"
+                  /> </picture
+              ></a>
+            </li>
+          </ul>
+          <a href="" class="clients__button">Все клиенты</a>
+        </div>
+      </section>
+    </main>
+    <!--футер-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrap--telnone">
+          <a href="./home.html" class="footer__logo logo" aria-label="Логотип компании">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <b class="footer-services__title">Услуги</b>
+          <ul class="footer-services__list">
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг собственников бизнеса</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Стратегические сессии</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Командные тренинги</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг команд</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Обучение</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a href="./about.html" class="footer-menu__link">ОБО МНЕ</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="" class="footer-menu__link">КЛИЕНТЫ</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="" class="footer-menu__link">БЛОГ</a>
+          </li>
+        </ul>
+
+        <address class="address">
+          <p class="address__text">КОНТАКТЫ</p>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="" class="address__link">syomochkin@gmail.com</a>
+            </li>
+            <li class="address__item">
+              <a href="" class="address__link">+38 (097) 757-11-89</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer__wrap--tablnone">
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="./home.html" class="footer__logo logo" aria-label="логотип компании">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

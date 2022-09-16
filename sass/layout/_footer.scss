@@ -27,21 +27,32 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 1.058;
+
+        transition: color 250ms $cubic;
 }
 
+.footer-services__link:hover,
+.footer-services__link:focus,
+.footer-menu__link:hover,
+.footer-menu__link:focus {
+    color: $accent-color;
+}
+
+
 .footer-services__title,
-.footer__menu__link,
+.footer-menu__link,
 .address__text {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.052;
     text-transform: uppercase;
+    transition: color 250ms $cubic;
 }
 
 
 
-.footer__menu__item, .address__item:not(:last-child) {
+.footer-menu__item, .address__item:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -102,7 +113,7 @@
     }
 
     .footer-services__list,
-    .footer__menu,
+    .footer-menu,
     .address {
         margin-bottom: 30px;
     }
@@ -139,11 +150,11 @@
             }
 
         .footer__wrap--telnone,
-        .footer__menu {  
+        .footer-menu {  
             margin-right: 172px; 
         }
 
-        .footer__menu,
+        .footer-menu,
         .address {
             margin-top: 46px;
         }
@@ -153,7 +164,7 @@
         }
 
         .footer__wrap--telnone,
-        .footer__menu {
+        .footer-menu {
             width: 186px;
         }
 }
@@ -166,7 +177,7 @@
 
     .footer-services,
     .address, 
-    .footer__menu {
+    .footer-menu {
         margin-top: 15px;
     }
 }

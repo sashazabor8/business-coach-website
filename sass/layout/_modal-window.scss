@@ -12,6 +12,7 @@
     transition: opacity 500ms linear;
 }
 
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -26,7 +27,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    min-width: 333px;
+    width: 333px;
     padding: 22px 19px 40px;
 
     background-color: $primary-white-color;
@@ -44,17 +45,19 @@
         &--accent {
             color: $accent-color;
         }
+
+
 }
 
 .modal__close {
     position: absolute;
-    top: 22px;
+    top: 16px;
     right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-
+    cursor: pointer;
     border: none;
     background-color: transparent;
 }
@@ -104,6 +107,7 @@
 }
 
 .modal__button {
+    position: relative;
     padding: 19px 15px;
     width: 100%;
 
@@ -120,11 +124,14 @@
 
 .modal__button::after {
     content: '+';
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
+    width: 21px;
+    height: 21px;
     float: right;
-    fill: $primary-text-color;
 
     transition: all 250ms $cubic;
 }
@@ -153,7 +160,6 @@
 
 .modal__wodrs,
 .modal__word {
-    margin-bottom: 10px;
 
         font-weight: 400;
         font-size: 16px;
@@ -164,7 +170,7 @@
 }
 
 .modal__word {
-    margin-bottom: 20px;
+
         font-size: 18px;
         line-height: 1.388;
 }
@@ -189,4 +195,97 @@
         &:focus {
             box-shadow: 0px 8px 20px rgba(22, 199, 228, 0.4);
         }
+}
+
+//MEDIA MAX-WIDTH 763PX 
+@media screen and (max-width:763px) {
+    .modal__wodrs {
+        margin-bottom: 10px;
+    }
+
+    .modal__word {
+        margin-bottom: 20px;
+    }
+} 
+
+//MEDIA MIN-WIDTH 764PX 
+@media screen and (min-width:764px) {
+    .modal {
+        width: 590px;
+        padding: 27px 32px 28px;
+    }
+
+    .modal__title {
+        margin-bottom: 15px;
+
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 1.411;
+    }
+
+    .modal__cross {
+        width: 50px;
+        height: 50px;
+    }
+    .modal__price {
+        margin-bottom: 39px;
+
+        font-size: 26px;
+            line-height: 1.115;
+    }
+
+    .modal__undertitle {
+        margin-bottom: 15px;
+
+        font-size: 24px;
+            line-height: 1.416;
+    }
+
+    .modal__list {
+        margin-bottom: 15px;
+    }
+
+    .modal__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px 16px 25px; 
+
+        font-size: 20px;
+            line-height: 1.4;
+    }
+
+    .modal__button::after {
+        font-weight: 400;
+        font-size: 32px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .modal__text {
+        font-size: 18px;
+        line-height: 1.388;
+    }
+
+    .modal-wrap {
+        display: flex;
+    }
+
+    .modal-wrap__right {
+        display: flex;
+        align-items: center;
+    }
+
+    .modal__wodrs {
+        width: 220px;
+    }
+
+    .modal__word {
+        margin-right: 16px;
+    }
+
+    .modal__link {
+        width: 250px;
+    }
+
 }
