@@ -1,0 +1,132 @@
+.navigation__link--current {
+    color: $accent-color;
+}
+
+.about-me__container {
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.about-me__title {
+    margin-bottom: 25px;
+}
+
+.about-me__text {
+    margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4;
+
+        &--accent {
+            color: $accent-color;
+        }
+}
+
+.about-me__desc {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.388;
+}
+
+.about-experience__title {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 1.407;
+        color: $accent-color;
+}
+
+.about-experience__title::before {
+    content: '+';
+    color: #E6E6E6;
+    margin-right: 10px;
+}
+
+.about-experience__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.187;
+}
+
+//MAX-WIDTH 763PX
+@media screen and (max-width:763px){
+    .about-me__desc {
+        margin-bottom: 20px;
+    }
+
+    .about-experience__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+//MIN-WIDTH 764PX 
+@media screen and (min-width:764px) {
+    .about-me__container {
+            padding-top: 30px;
+        }
+
+    .about-me__title {
+        margin-bottom: 30px;
+    }
+
+    .about-me__text {
+        margin-bottom: 25px;
+        font-weight: 400;
+            font-size: 24px;
+            line-height: 1.416;
+    }
+}
+
+//MIN-WIDTH 764PX --MAX-WIDTH 1199px
+@media screen and (min-width:764px) and (max-width:1199px) {
+    .about-me__container {
+        position: relative;
+    }
+
+    .about-me__wrap-text {
+        position: absolute;
+        top: 156px;
+        left: 387px;
+        width: 347px;
+    }
+
+    .about-experience {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-experience__item {
+        width: 49%;
+    }
+
+    .about-experience__item:nth-child(1) {
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+
+//MAX-WIDTH 1199PX 
+@media screen and (max-width:1199px) {
+    .about-me__picture {
+            margin-bottom: 30px;
+        }
+}
+//MIN-WIDTH 1200PX 
+@media screen and (min-width:1200px) {
+    .about-me__container {
+            padding-top: 26px;
+        }
+
+        .about-me__title {
+        margin-bottom: 26px;
+    }
+    
+    .about-me__wrap {
+        display: flex;
+    }
+
+    .about-me__wrap-right {
+        width: 590px;
+        margin-left: 60px;
+    }
+}

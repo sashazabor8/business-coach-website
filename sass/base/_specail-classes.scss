@@ -129,3 +129,39 @@
 .main {
     border-top: 1px solid #E9E9E9;
 }
+
+//link-list 
+.link-list {
+    display: flex;
+    margin-bottom: 25px;
+
+    @media screen and (min-width:764px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 26px;
+    }
+}
+
+
+.link-list__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.066;
+    color: #9D9D9D;
+
+    &--current {
+        color: #656565;
+    }
+}
+
+.link-list__link--current::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:  #9D9D9D;
+    display: inline-block;
+    margin: 0 10px 3px;
+}
