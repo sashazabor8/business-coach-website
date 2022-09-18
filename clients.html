@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Обо мне</title>
+    <title>Клиенты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Шапка сайта-->
-    <header class="about-header header container">
+    <header class="header container">
       <a href="./home.html" class="header__logo logo" aria-label="логотип компании">
         <svg class="logo__image">
           <use href="./images/sprite-1.svg#icon-LOGO"></use>
@@ -43,13 +42,13 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="./about.html" class="navigation__link current-link">Обо мне</a>
+              <a href="./about.html" class="navigation__link">Обо мне</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Услуги</a>
             </li>
             <li class="navigation__item">
-              <a href="./clients.html" class="navigation__link">Клиенты</a>
+              <a href="./clients.html" class="navigation__link current-link">Клиенты</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Статьи</a>
@@ -107,512 +106,548 @@
         </ul>
       </div>
     </header>
-    <!--main-->
     <main class="main">
-      <!--ОБО МНЕ-->
-      <section class="about-me">
-        <div class="about-me__container container">
+      <section class="customer">
+        <div class="customer__container container">
           <ul class="link-list">
             <li class="link-list__item test">
               <a href="" class="link-list__link"> Главная</a>
             </li>
             <li class="link-list__item">
-              <a href="" class="link-list__link link-list__link--current">Обо мне</a>
+              <a href="" class="link-list__link link-list__link--current">Клиенты</a>
             </li>
           </ul>
-          <h2 class="about-me__title title">ОБО <span class="title--accent">МНЕ</span></h2>
-          <div class="about-me__wrap">
-            <picture>
-              <source
-                srcset="
-                  ./images/about/about-img-desktop.webp    1x,
-                  ./images/about/about-img-desktop@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width:1200px)"
-              />
-              <source
-                srcset="
-                  ./images/about/about-img-desktop.jpg    1x,
-                  ./images/about/about-img-desktop@2x.jpg 2x
-                "
-                media="(min-width:1200px)"
-              />
-              <source
-                srcset="
-                  ./images/about/about-img-tabl.webp    1x,
-                  ./images/about/about-img-tabl@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width:764px)"
-              />
-              <source
-                srcset="
-                  ./images/about/about-img-tabl.jpg    1x,
-                  ./images/about/about-img-tabl@2x.jpg 2x
-                "
-                media="(min-width:764px)"
-              />
-              <source
-                srcset="
-                  ./images/about/about-img-tel.webp    1x,
-                  ./images/about/about-img-tel@2x.webp 2x
-                "
-                type="image/webp"
-                media="(max-width:763px)"
-              />
-              <source
-                srcset="./images/about/about-img-tel.jpg 1x, ./images/about/about-img-tel@2x.jpg 2x"
-                media="(max-width:763px)"
-              />
-              <img
-                src="./images/about/about-img-tel.jpg"
-                alt="Портрет Ивана Надоенко"
-                class="about-me__picture"
-              />
-            </picture>
-            <div class="about-me__wrap-right">
-              <div class="about-me__wrap-text">
-                <p class="about-me__text">
-                  Меня зовут
-                  <span class="about-me__text--accent">Надоенко Иван Александрович. </span>Я
-                  бизнес-коуч, эксперт в систематизации бизнеса и построении сильных команд.
-                </p>
-                <p class="about-me__desc">
-                  Я помогаю повысить доход компании за счёт коучинга собственников бизнеса и
-                  систематизации бизнеса, посредством включения команды в этот процесс.
-                </p>
-              </div>
-
-              <ul class="about-experience">
-                <li class="about-experience__item">
-                  <h3 class="about-experience__title">4 года</h3>
-                  <p class="about-experience__text">
-                    Постоянной ежедневной практики коучинга с собственниками бизнеса, на
-                    практических кейсах, дают возможность понять боль собственников и руководителей
-                    и помочь им самостоятельно ее решить.
-                  </p>
-                </li>
-                <li class="about-experience__item">
-                  <h3 class="about-experience__title">7 лет</h3>
-                  <p class="about-experience__text">
-                    Опыта в области оценки персонала даёт мне возможность разработать лучший формат
-                    и стиль коучинга индивидуально под каждого собственника бизнеса и руководителя.
-                  </p>
-                </li>
-                <li class="about-experience__item">
-                  <h3 class="about-experience__title">6 лет</h3>
-                  <p class="about-experience__text">
-                    Работы в компании Бизнес-Конструктор дали высокую экспертизу в области
-                    систематизации бизнеса, что является дополнительной выгодой в коучинге с мной и
-                    моей командой.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Фото с командами клиентов-->
-      <section class="clients-team">
-        <div class="clients-team__container container">
-          <div class="clients-team__wrap">
-            <h2 class="clients-team__title title">
-              Фото с <span class="title--accent">командами клиентов</span>
-            </h2>
-            <ul class="clients-team__list--tablet switches__list">
-              <li class="switches__item">
-                <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
-                  <svg class="switch__image">
-                    <use href="./images/sprite-1.svg#icon-arrow-2"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="switches__item">
-                <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
-                  <svg class="switch__image">
-                    <use href="./images/sprite-1.svg#icon-arrow-1"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="team-cards">
-            <li class="team-cards__item">
-              <article class="team-cards__article">
+          <h2 class="customer__title title">Клиенты</h2>
+          <ul class="customer__list">
+            <li class="customer__item">
+              <article class="customer-card">
                 <picture>
                   <source
                     srcset="
-                      ./images/about-me/about-me-desktop1.webp    1x,
-                      ./images/about-me/about-me-desktop1@2x.webp 2x
+                      ../images/customer/customer-desktop1.webp    1x,
+                      ../images/customer/customer-desktop1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/about-me/about-me-desktop1.jpg    1x,
-                      ./images/about-me/about-me-desktop1@2x.jpg 2x
+                      ../images/customer/customer-desktop1.jpg    1x,
+                      ../images/customer/customer-desktop1@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/about-me/about-me-tabl1.webp    1x,
-                      ./images/about-me/about-me-tabl1@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-tabl1.jpg    1x,
-                      ./images/about-me/about-me-tabl1@2x.jpg 2x
-                    "
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-tel1.webp    1x,
-                      ./images/about-me/about-me-tel1@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(max-width:763px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-tel1.jpg    1x,
-                      ./images/about-me/about-me-tel1@2x.jpg 2x
-                    "
-                    media="(max-width:763px)"
-                  />
-                  <img src="./images/about-me/about-me-tel1.jpg" alt="" class="" />
-                </picture>
-                <p class="team-cards__about">
-                  Zoetis. Крупнейший в мире производитель лекарств для домашних животных
-                </p>
-              </article>
-            </li>
-            <li class="team-cards__item team-cards__item--tablet">
-              <article class="team-cards__article">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-desktop2.webp    1x,
-                      ./images/about-me/about-me-desktop2@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-desktop2.jpg    1x,
-                      ./images/about-me/about-me-desktop2@2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/about-me/about-me-tabl2.webp    1x,
-                      ./images/about-me/about-me-tabl2@2x.webp 2x
+                      ../images/customer/customer-tabl1.webp    1x,
+                      ../images/customer/customer-tabl1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ./images/about-me/about-me-tabl2.jpg    1x,
-                      ./images/about-me/about-me-tabl2@2x.jpg 2x
+                      ../images/customer/customer-tabl1.jpg    1x,
+                      ../images/customer/customer-tabl1@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
-                  <img src="./images/about-me/about-me-tabl2.jpg" alt="" class="" />
-                </picture>
-                <p class="team-cards__about">
-                  Zoetis. Крупнейший в мире производитель лекарств для домашних животных
-                </p>
-              </article>
-            </li>
-            <li class="team-cards__item team-cards__item--desktop">
-              <article class="team-cards__article">
-                <picture>
                   <source
                     srcset="
-                      ./images/about-me/about-me-desktop3.webp    1x,
-                      ./images/about-me/about-me-desktop3@2x.webp 2x
+                      ../images/customer/customer-tel1.webp    1x,
+                      ../images/customer/customer-tel1@2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/about-me/about-me-desktop3.jpg    1x,
-                      ./images/about-me/about-me-desktop3@2x.jpg 2x
+                      ../images/customer/customer-tel1.jpg    1x,
+                      ../images/customer/customer-tel1@2x.jpg 2x
                     "
-                    media="(min-width:1200px)"
                   />
                   <img
-                    src="./images/about-me/about-me-desktop3.jpg"
+                    src="../images/customer/customer-tel1.jpg"
                     alt=""
-                    class="team-cards__picture"
+                    class="customer-card__picture"
                   />
                 </picture>
-                <p class="team-cards__about">
-                  Zoetis. Крупнейший в мире производитель лекарств для домашних животных
-                </p>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Opti taxi</h3>
+                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
+                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.webp    1x,
+                      ../images/customer/customer-desktop2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.jpg    1x,
+                      ../images/customer/customer-desktop2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.webp    1x,
+                      ../images/customer/customer-tabl2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.jpg    1x,
+                      ../images/customer/customer-tabl2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.webp    1x,
+                      ../images/customer/customer-tel2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.jpg    1x,
+                      ../images/customer/customer-tel2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel2.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Pokupon</h3>
+                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.webp    1x,
+                      ../images/customer/customer-desktop3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.jpg    1x,
+                      ../images/customer/customer-desktop3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.webp    1x,
+                      ../images/customer/customer-tabl3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.jpg    1x,
+                      ../images/customer/customer-tabl3@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.webp    1x,
+                      ../images/customer/customer-tel3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.jpg    1x,
+                      ../images/customer/customer-tel3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel3.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">G-bar</h3>
+                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop1.webp    1x,
+                      ../images/customer/customer-desktop1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop1.jpg    1x,
+                      ../images/customer/customer-desktop1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl1.webp    1x,
+                      ../images/customer/customer-tabl1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl1.jpg    1x,
+                      ../images/customer/customer-tabl1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel1.webp    1x,
+                      ../images/customer/customer-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel1.jpg    1x,
+                      ../images/customer/customer-tel1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel1.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Opti taxi</h3>
+                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
+                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.webp    1x,
+                      ../images/customer/customer-desktop2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.jpg    1x,
+                      ../images/customer/customer-desktop2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.webp    1x,
+                      ../images/customer/customer-tabl2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.jpg    1x,
+                      ../images/customer/customer-tabl2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.webp    1x,
+                      ../images/customer/customer-tel2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.jpg    1x,
+                      ../images/customer/customer-tel2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel2.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Pokupon</h3>
+                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.webp    1x,
+                      ../images/customer/customer-desktop3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.jpg    1x,
+                      ../images/customer/customer-desktop3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.webp    1x,
+                      ../images/customer/customer-tabl3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.jpg    1x,
+                      ../images/customer/customer-tabl3@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.webp    1x,
+                      ../images/customer/customer-tel3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.jpg    1x,
+                      ../images/customer/customer-tel3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel3.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">G-bar</h3>
+                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop1.webp    1x,
+                      ../images/customer/customer-desktop1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop1.jpg    1x,
+                      ../images/customer/customer-desktop1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl1.webp    1x,
+                      ../images/customer/customer-tabl1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl1.jpg    1x,
+                      ../images/customer/customer-tabl1@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel1.webp    1x,
+                      ../images/customer/customer-tel1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel1.jpg    1x,
+                      ../images/customer/customer-tel1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel1.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Opti taxi</h3>
+                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
+                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.webp    1x,
+                      ../images/customer/customer-desktop2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop2.jpg    1x,
+                      ../images/customer/customer-desktop2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.webp    1x,
+                      ../images/customer/customer-tabl2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl2.jpg    1x,
+                      ../images/customer/customer-tabl2@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.webp    1x,
+                      ../images/customer/customer-tel2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel2.jpg    1x,
+                      ../images/customer/customer-tel2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel2.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">Pokupon</h3>
+                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                </div>
+              </article>
+            </li>
+            <li class="customer__item">
+              <article class="customer-card">
+                <picture>
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.webp    1x,
+                      ../images/customer/customer-desktop3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-desktop3.jpg    1x,
+                      ../images/customer/customer-desktop3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.webp    1x,
+                      ../images/customer/customer-tabl3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tabl3.jpg    1x,
+                      ../images/customer/customer-tabl3@2x.jpg 2x
+                    "
+                    media="(min-width:764px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.webp    1x,
+                      ../images/customer/customer-tel3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ../images/customer/customer-tel3.jpg    1x,
+                      ../images/customer/customer-tel3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../images/customer/customer-tel3.jpg"
+                    alt=""
+                    class="customer-card__picture"
+                  />
+                </picture>
+                <div class="customer-card__wrap">
+                  <h3 class="customer-card__title">G-bar</h3>
+                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                </div>
               </article>
             </li>
           </ul>
-          <ul class="clients-team__list--tel switches__list">
-            <li class="switches__item">
-              <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
-                <svg class="switch__image">
-                  <use href="./images/sprite-1.svg#icon-arrow-2"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="switches__item">
-              <button type="button" class="switch" aria-label="кнопка переключения видеоотзывов">
-                <svg class="switch__image">
-                  <use href="./images/sprite-1.svg#icon-arrow-1"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="clients">
-        <div class="clients__container container">
-          <h2 class="clients__title title">Мои <span class="title--accent">клиенты</span></h2>
-          <ul class="clients__list">
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet1.webp    1x,
-                      ./images/clients/clients-image-tablet1@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet1.jpg    1x,
-                      ./images/clients/clients-image-tablet1@2x.jpg 2x
-                    "
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tel1.webp    1x,
-                      ./images/clients/clients-image-tel1@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(max-width:763px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tel1.jpg    1x,
-                      ./images/clients/clients-image-tel1@2x.jpg 2x
-                    "
-                    media="(max-width:763px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-tablet1.jpg "
-                    alt="магазин Покупон"
-                    class="clients__picture"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet2.webp    1x,
-                      ./images/clients/clients-image-tablet2@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet2.jpg    1x,
-                      ./images/clients/clients-image-tablet2@2x.jpg 2x
-                    "
-                    media="(min-width:764px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-tablet2.jpg"
-                    alt="фирма G-bar"
-                    class="clients__picture"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet3.webp    1x,
-                      ./images/clients/clients-image-tablet3@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet3.jpg    1x,
-                      ./images/clients/clients-image-tablet3@2x.jpg 2x
-                    "
-                    media="(min-width:764px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-tablet3.jpg"
-                    alt="магазин Intertop"
-                    class="clients__picture"
-                  /> </picture
-              ></a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet4.webp    1x,
-                      ./images/clients/clients-image-tablet4@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-tablet4.jpg    1x,
-                      ./images/clients/clients-image-tablet4@2x.jpg 2x
-                    "
-                    media="(min-width:764px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-tablet4.jpg"
-                    alt="cтудия ASA"
-                    class="clients__picture"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop5.webp    1x,
-                      ./images/clients/clients-image-desktop5@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop5.jpg    1x,
-                      ./images/clients/clients-image-desktop5@2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-desktop5.jpg"
-                    alt="магазин Opti"
-                    class="clients__picture"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop6.webp    1x,
-                      ./images/clients/clients-image-desktop6@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop6.jpg    1x,
-                      ./images/clients/clients-image-desktop6@2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-desktop6.jpg"
-                    alt="фирма Yoola"
-                    class="clients__picture"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop7.webp    1x,
-                      ./images/clients/clients-image-desktop7@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop7.jpg    1x,
-                      ./images/clients/clients-image-desktop7@2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-desktop7.jpg"
-                    alt="магазин pandora"
-                    class="clients__picture"
-                  /> </picture
-              ></a>
-            </li>
-            <li class="clients__item clients__item--hidden-tel clients__item--hidden-tablet">
-              <a href="" class="clients__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop8.webp    1x,
-                      ./images/clients/clients-image-desktop8@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width:1200px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/clients/clients-image-desktop8.jpg    1x,
-                      ./images/clients/clients-image-desktop8@2x.jpg 2x
-                    "
-                    media="(min-width:1200px)"
-                  />
-                  <img
-                    src="./images/clients/clients-image-desktop8.jpg"
-                    alt="компания Grace Agro"
-                    class="clients__picture"
-                  /> </picture
-              ></a>
-            </li>
-          </ul>
-          <a href="" class="clients__button">Все клиенты</a>
         </div>
       </section>
     </main>
-    <!--футер-->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__wrap--telnone">
