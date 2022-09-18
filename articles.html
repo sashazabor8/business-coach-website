@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Клиенты</title>
+    <title>Статьи</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,10 +48,10 @@
               <a href="" class="navigation__link">Услуги</a>
             </li>
             <li class="navigation__item">
-              <a href="./clients.html" class="navigation__link current-link">Клиенты</a>
+              <a href="./clients.html" class="navigation__link">Клиенты</a>
             </li>
             <li class="navigation__item">
-              <a href="./articles.html" class="navigation__link">Статьи</a>
+              <a href="./articles.html" class="navigation__link current-link">Статьи</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Контакты</a>
@@ -107,540 +107,567 @@
       </div>
     </header>
     <main class="main">
-      <section class="customer">
-        <div class="customer__container container">
+      <section class="articles">
+        <div class="articles__container container">
           <ul class="link-list">
             <li class="link-list__item test">
               <a href="./home.html" class="link-list__link"> Главная</a>
             </li>
             <li class="link-list__item">
-              <a href="./clients.html" class="link-list__link link-list__link--current">Клиенты</a>
+              <a href="./clients.html" class="link-list__link link-list__link--current">Статьи</a>
             </li>
           </ul>
-          <h2 class="customer__title title">Клиенты</h2>
-          <ul class="customer__list">
-            <li class="customer__item">
-              <article class="customer-card">
+          <h2 class="articles__title title">Статьи</h2>
+          <ul class="articles__list">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.webp    1x,
-                      ../images/customer/customer-desktop1@2x.webp 2x
+                      ./images/blog/blog-picture-desktop1.webp    1x,
+                      ./images/blog/blog-picture-desktop1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.jpg    1x,
-                      ../images/customer/customer-desktop1@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop1.jpg    1x,
+                      ./images/blog/blog-picture-desktop1@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.webp    1x,
-                      ../images/customer/customer-tabl1@2x.webp 2x
+                      ./images/blog/blog-picture-tabl1.webp    1x,
+                      ./images/blog/blog-picture-tabl1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.jpg    1x,
-                      ../images/customer/customer-tabl1@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl1.jpg    1x,
+                      ./images/blog/blog-picture-tabl1@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel1.webp    1x,
-                      ../images/customer/customer-tel1@2x.webp 2x
+                      ./images/blog/blog-picture-tel1.webp    1x,
+                      ./images/blog/blog-picture-tel1@2x.webp 2x
                     "
                     type="image/webp"
+                    media="(max-width:763px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel1.jpg    1x,
-                      ../images/customer/customer-tel1@2x.jpg 2x
+                      ./images/blog/blog-picture-tel1.jpg    1x,
+                      ./images/blog/blog-picture-tel1@2x.jpg 2x
                     "
+                    media="(max-width:763px)"
                   />
                   <img
-                    src="../images/customer/customer-tel1.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl1.jpg"
+                    alt="работинки обсуждают цели компании"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Opti taxi</h3>
-                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
-                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Ценности компании</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.webp    1x,
-                      ../images/customer/customer-desktop2@2x.webp 2x
+                      ./images/blog/blog-picture-desktop2.webp    1x,
+                      ./images/blog/blog-picture-desktop2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.jpg    1x,
-                      ../images/customer/customer-desktop2@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop2.jpg    1x,
+                      ./images/blog/blog-picture-desktop2@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.webp    1x,
-                      ../images/customer/customer-tabl2@2x.webp 2x
+                      ./images/blog/blog-picture-tabl2.webp    1x,
+                      ./images/blog/blog-picture-tabl2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.jpg    1x,
-                      ../images/customer/customer-tabl2@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl2.jpg    1x,
+                      ./images/blog/blog-picture-tabl2@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.webp    1x,
-                      ../images/customer/customer-tel2@2x.webp 2x
+                      ./images/blog/blog-picture-tel2.webp    1x,
+                      ./images/blog/blog-picture-tel2@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.jpg    1x,
-                      ../images/customer/customer-tel2@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel2.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl2.jpg"
+                    alt="люди поднимаются наверх"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Pokupon</h3>
-                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Воронка подбора персонала</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.webp    1x,
-                      ../images/customer/customer-desktop3@2x.webp 2x
+                      ./images/blog/blog-picture-desktop3.webp    1x,
+                      ./images/blog/blog-picture-desktop3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.jpg    1x,
-                      ../images/customer/customer-desktop3@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop3.jpg    1x,
+                      ./images/blog/blog-picture-desktop3@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.webp    1x,
-                      ../images/customer/customer-tabl3@2x.webp 2x
+                      ./images/blog/blog-picture-tabl3.webp    1x,
+                      ./images/blog/blog-picture-tabl3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.jpg    1x,
-                      ../images/customer/customer-tabl3@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl3.jpg    1x,
+                      ./images/blog/blog-picture-tabl3@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.webp    1x,
-                      ../images/customer/customer-tel3@2x.webp 2x
+                      ./images/blog/blog-picture-tel3.webp    1x,
+                      ./images/blog/blog-picture-tel3@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.jpg    1x,
-                      ../images/customer/customer-tel3@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel3.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-desktop3.jpg"
+                    alt="довольные работники"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">G-bar</h3>
-                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">
+                    Как поддерживать мотивацию сотрудников во время карантина
+                  </h3>
+                  <p class="articles-card__about">
+                    Сегодня рассмотрим несколько факторов, которые помогут не только поддержать
+                    мотивацию ваших сотрудников, а и повысить её эффективность в несколько раз.
+                  </p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.webp    1x,
-                      ../images/customer/customer-desktop1@2x.webp 2x
+                      ./images/blog/blog-picture-desktop1.webp    1x,
+                      ./images/blog/blog-picture-desktop1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop1.jpg    1x,
+                      ./images/blog/blog-picture-desktop1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl1.webp    1x,
+                      ./images/blog/blog-picture-tabl1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.jpg    1x,
-                      ../images/customer/customer-desktop1@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl1.jpg    1x,
+                      ./images/blog/blog-picture-tabl1@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.webp    1x,
-                      ../images/customer/customer-tabl1@2x.webp 2x
+                      ./images/blog/blog-picture-tel1.webp    1x,
+                      ./images/blog/blog-picture-tel1@2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width:764px)"
+                    media="(max-width:763px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.jpg    1x,
-                      ../images/customer/customer-tabl1@2x.jpg 2x
+                      ./images/blog/blog-picture-tel1.jpg    1x,
+                      ./images/blog/blog-picture-tel1@2x.jpg 2x
                     "
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ../images/customer/customer-tel1.webp    1x,
-                      ../images/customer/customer-tel1@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ../images/customer/customer-tel1.jpg    1x,
-                      ../images/customer/customer-tel1@2x.jpg 2x
-                    "
+                    media="(max-width:763px)"
                   />
                   <img
-                    src="../images/customer/customer-tel1.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl1.jpg"
+                    alt="работинки обсуждают цели компании"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Opti taxi</h3>
-                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
-                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Ценности компании</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.webp    1x,
-                      ../images/customer/customer-desktop2@2x.webp 2x
+                      ./images/blog/blog-picture-desktop2.webp    1x,
+                      ./images/blog/blog-picture-desktop2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.jpg    1x,
-                      ../images/customer/customer-desktop2@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop2.jpg    1x,
+                      ./images/blog/blog-picture-desktop2@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.webp    1x,
-                      ../images/customer/customer-tabl2@2x.webp 2x
+                      ./images/blog/blog-picture-tabl2.webp    1x,
+                      ./images/blog/blog-picture-tabl2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.jpg    1x,
-                      ../images/customer/customer-tabl2@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl2.jpg    1x,
+                      ./images/blog/blog-picture-tabl2@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.webp    1x,
-                      ../images/customer/customer-tel2@2x.webp 2x
+                      ./images/blog/blog-picture-tel2.webp    1x,
+                      ./images/blog/blog-picture-tel2@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.jpg    1x,
-                      ../images/customer/customer-tel2@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel2.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl2.jpg"
+                    alt="люди поднимаются наверх"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Pokupon</h3>
-                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Воронка подбора персонала</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.webp    1x,
-                      ../images/customer/customer-desktop3@2x.webp 2x
+                      ./images/blog/blog-picture-desktop3.webp    1x,
+                      ./images/blog/blog-picture-desktop3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.jpg    1x,
-                      ../images/customer/customer-desktop3@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop3.jpg    1x,
+                      ./images/blog/blog-picture-desktop3@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.webp    1x,
-                      ../images/customer/customer-tabl3@2x.webp 2x
+                      ./images/blog/blog-picture-tabl3.webp    1x,
+                      ./images/blog/blog-picture-tabl3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.jpg    1x,
-                      ../images/customer/customer-tabl3@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl3.jpg    1x,
+                      ./images/blog/blog-picture-tabl3@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.webp    1x,
-                      ../images/customer/customer-tel3@2x.webp 2x
+                      ./images/blog/blog-picture-tel3.webp    1x,
+                      ./images/blog/blog-picture-tel3@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.jpg    1x,
-                      ../images/customer/customer-tel3@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel3.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-desktop3.jpg"
+                    alt="довольные работники"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">G-bar</h3>
-                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">
+                    Как поддерживать мотивацию сотрудников во время карантина
+                  </h3>
+                  <p class="articles-card__about">
+                    Сегодня рассмотрим несколько факторов, которые помогут не только поддержать
+                    мотивацию ваших сотрудников, а и повысить её эффективность в несколько раз.
+                  </p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.webp    1x,
-                      ../images/customer/customer-desktop1@2x.webp 2x
+                      ./images/blog/blog-picture-desktop1.webp    1x,
+                      ./images/blog/blog-picture-desktop1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-desktop1.jpg    1x,
+                      ./images/blog/blog-picture-desktop1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/blog-picture-tabl1.webp    1x,
+                      ./images/blog/blog-picture-tabl1@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop1.jpg    1x,
-                      ../images/customer/customer-desktop1@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl1.jpg    1x,
+                      ./images/blog/blog-picture-tabl1@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.webp    1x,
-                      ../images/customer/customer-tabl1@2x.webp 2x
+                      ./images/blog/blog-picture-tel1.webp    1x,
+                      ./images/blog/blog-picture-tel1@2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width:764px)"
+                    media="(max-width:763px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl1.jpg    1x,
-                      ../images/customer/customer-tabl1@2x.jpg 2x
+                      ./images/blog/blog-picture-tel1.jpg    1x,
+                      ./images/blog/blog-picture-tel1@2x.jpg 2x
                     "
-                    media="(min-width:764px)"
-                  />
-                  <source
-                    srcset="
-                      ../images/customer/customer-tel1.webp    1x,
-                      ../images/customer/customer-tel1@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ../images/customer/customer-tel1.jpg    1x,
-                      ../images/customer/customer-tel1@2x.jpg 2x
-                    "
+                    media="(max-width:763px)"
                   />
                   <img
-                    src="../images/customer/customer-tel1.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl1.jpg"
+                    alt="работинки обсуждают цели компании"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Opti taxi</h3>
-                  <p class="customer-card__undertitle">Самое крупное такси в Украине.</p>
-                  <button type="button" class="customer-card__button">Видеоотзыв</button>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Ценности компании</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.webp    1x,
-                      ../images/customer/customer-desktop2@2x.webp 2x
+                      ./images/blog/blog-picture-desktop2.webp    1x,
+                      ./images/blog/blog-picture-desktop2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop2.jpg    1x,
-                      ../images/customer/customer-desktop2@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop2.jpg    1x,
+                      ./images/blog/blog-picture-desktop2@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.webp    1x,
-                      ../images/customer/customer-tabl2@2x.webp 2x
+                      ./images/blog/blog-picture-tabl2.webp    1x,
+                      ./images/blog/blog-picture-tabl2@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl2.jpg    1x,
-                      ../images/customer/customer-tabl2@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl2.jpg    1x,
+                      ./images/blog/blog-picture-tabl2@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.webp    1x,
-                      ../images/customer/customer-tel2@2x.webp 2x
+                      ./images/blog/blog-picture-tel2.webp    1x,
+                      ./images/blog/blog-picture-tel2@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel2.jpg    1x,
-                      ../images/customer/customer-tel2@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel2.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-tabl2.jpg"
+                    alt="люди поднимаются наверх"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">Pokupon</h3>
-                  <p class="customer-card__undertitle">Популярный маркетплейс услуг в Украине.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">Воронка подбора персонала</h3>
+                  <p class="articles-card__about">Для чего нужны корпоративные ценности?</p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>
-            <li class="customer__item">
-              <article class="customer-card">
+            <li class="articles__item">
+              <article class="articles-card">
                 <picture>
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.webp    1x,
-                      ../images/customer/customer-desktop3@2x.webp 2x
+                      ./images/blog/blog-picture-desktop3.webp    1x,
+                      ./images/blog/blog-picture-desktop3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-desktop3.jpg    1x,
-                      ../images/customer/customer-desktop3@2x.jpg 2x
+                      ./images/blog/blog-picture-desktop3.jpg    1x,
+                      ./images/blog/blog-picture-desktop3@2x.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.webp    1x,
-                      ../images/customer/customer-tabl3@2x.webp 2x
+                      ./images/blog/blog-picture-tabl3.webp    1x,
+                      ./images/blog/blog-picture-tabl3@2x.webp 2x
                     "
                     type="image/webp"
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tabl3.jpg    1x,
-                      ../images/customer/customer-tabl3@2x.jpg 2x
+                      ./images/blog/blog-picture-tabl3.jpg    1x,
+                      ./images/blog/blog-picture-tabl3@2x.jpg 2x
                     "
                     media="(min-width:764px)"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.webp    1x,
-                      ../images/customer/customer-tel3@2x.webp 2x
+                      ./images/blog/blog-picture-tel3.webp    1x,
+                      ./images/blog/blog-picture-tel3@2x.webp 2x
                     "
                     type="image/webp"
                   />
                   <source
                     srcset="
-                      ../images/customer/customer-tel3.jpg    1x,
-                      ../images/customer/customer-tel3@2x.jpg 2x
+                      ./images/blog/blog-picture-tel2.jpg    1x,
+                      ./images/blog/blog-picture-tel2@2x.jpg 2x
                     "
                   />
                   <img
-                    src="../images/customer/customer-tel3.jpg"
-                    alt=""
-                    class="customer-card__picture"
+                    src="./images/blog/blog-picture-desktop3.jpg"
+                    alt="довольные работники"
+                    class="blog-card__picture"
                   />
                 </picture>
-                <div class="customer-card__wrap">
-                  <h3 class="customer-card__title">G-bar</h3>
-                  <p class="customer-card__undertitle">Сеть бьютибаров.</p>
+                <div class="articles-card__wrap">
+                  <h3 class="articles-card__title">
+                    Как поддерживать мотивацию сотрудников во время карантина
+                  </h3>
+                  <p class="articles-card__about">
+                    Сегодня рассмотрим несколько факторов, которые помогут не только поддержать
+                    мотивацию ваших сотрудников, а и повысить её эффективность в несколько раз.
+                  </p>
+                  <time class="articles-card__time">23.03.2021</time>
                 </div>
               </article>
             </li>

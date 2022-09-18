@@ -1,0 +1,122 @@
+.articles__container {
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.articles__title {
+    margin-bottom: 25px;
+}
+
+.articles__item {
+        border: 1px solid #EDEDED;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+        
+            transition: box-shadow 250ms $cubic;
+        
+            &:hover {
+                box-shadow: 0px 0px 25px rgba(22, 199, 228, 0.4);
+            }
+}
+
+.articles-card__wrap {
+    padding: 20px 20px 30px;
+}
+
+.articles-card__title {
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+
+    transition: color 250ms $cubic;
+
+    .articles__item:hover & {
+        color: $accent-color;
+    }
+}
+
+.articles-card__about,
+.articles-card__time {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.277;
+    color: $secondary-text-color;
+}
+
+//MAX-WIDTH 763PX 
+@media screen and (max-width:763px) {
+    .articles__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .articles-card__time {
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+//MIN-WIDTH 764PX
+@media screen and (min-width:764px) {
+    .articles__container {
+            padding-top: 30px;
+        }
+    
+    .articles__title {
+    margin-bottom: 30px;
+    }   
+
+    .articles__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articles-card__wrap {
+        min-height: 332px;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .articles-card__about {
+        flex-grow: 1;
+    }
+
+}
+
+//MIN-WIDTH 764PX--MAX-WIDTH 1199PX 
+@media screen and (min-width:764px) and (max-width:1199px) {
+    .articles__list {
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-top: -20px;
+    }
+
+    .articles__item {
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 20px;
+        width: 347px;
+    }
+}
+
+//MIN-WIDTH 1200PX 
+@media screen and (min-width:1200px) {
+    .articles__container {
+            padding-top: 26px;
+            padding-bottom: 50px;
+        }
+
+    .articles__list {
+        margin: -10px;
+    }
+
+    .articles__item {
+        margin: 10px;
+        width: calc((100% - 20px * 3) / 3);
+    }
+}

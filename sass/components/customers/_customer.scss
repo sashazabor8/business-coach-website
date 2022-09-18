@@ -13,7 +13,7 @@
         overflow: hidden;
         cursor: pointer;
 
-        transition: all 250ms $cubic;
+        transition: box-shadow 250ms $cubic;
 
     
         &:hover {
