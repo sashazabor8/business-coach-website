@@ -3,10 +3,13 @@
 @import './base/common';
 @import './base/specail-classes';
 
+//MODAL
 @import './layout/modal-window';
 
+//HEADER
 @import './layout/header';
 
+//HOME-PAGE 
 @import './components/home-page/hero';
 @import './components/home-page/toward';
 @import './components/home-page/services';
@@ -16,15 +19,18 @@
 @import './components/home-page/reviews';
 @import './components/home-page/blog';
 
+//FOOTER
 @import './layout/footer';
 
 //ABOUT 
 @import './components/about/about-me';
 @import './components/about/clients-team';
 
-
 //CUSTOMERS
 @import './components/customers/customer';
 
 //ARTICLES 
 @import './components/articles/articles';
+
+//CONTACTS
+@import './components/contacts/contacts';

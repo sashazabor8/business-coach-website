@@ -61,11 +61,20 @@
 }
 
 .address__link {
+    display: flex;
+    align-items: center;
+
     font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 1.062;
 }
+
+.address__svg {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+} 
 
 .footer__social-links__link {
     display: flex;

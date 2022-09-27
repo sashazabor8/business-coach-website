@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="about-header header container">
+      <a href="./home.html" class="header__logo logo" aria-label="логотип компании">
+        <svg class="logo__image">
+          <use href="./images/sprite-1.svg#icon-LOGO"></use>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="mobile-button"
+        aria-label="кнопка открытия и закрытия мобильного меню"
+        data-menu-button
+      >
+        <svg width="48px" height="48px" class="mobile-button__image">
+          <use href="./images/sprite-1.svg#icon-mobile-menu" class="mobile-button__open"></use>
+          <use
+            href="./images/sprite-1.svg#icon-mobile-close-menu"
+            class="mobile-button__close"
+          ></use>
+        </svg>
+      </button>
+      <div class="header__mobile-menu" data-menu>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./about.html" class="navigation__link">Обо мне</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./clients.html" class="navigation__link">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./articles.html" class="navigation__link">Статьи</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./contacts.html" class="navigation__link current-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__social-links social-links">
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.instagram.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Инстаграм"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://web.telegram.org/k/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Телеграм"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.whatsapp.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Ватцап"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__social-links__item social-links__item">
+            <a
+              href="https://www.youtube.com/"
+              class="social-links__link header__social-links__link"
+              aria-label="иконка Ютуб"
+            >
+              <svg class="social-links__image header__social-links__image">
+                <use href="./images/sprite-1.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts">
+        <div class="contacts__container container">
+          <span class="contacts__blur"></span>
+          <ul class="link-list">
+            <li class="link-list__item test">
+              <a href="./home.html" class="link-list__link"> Главная</a>
+            </li>
+            <li class="link-list__item">
+              <a href="./clients.html" class="link-list__link link-list__link--current">Контакты</a>
+            </li>
+          </ul>
+          <div class="contacts__wrap">
+            <div class="contacts__wrap--left">
+              <h2 class="contacts__title title">МОИ КОНТАКТЫ</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">
+                    <svg class="contacts__svg">
+                      <use href="./images/sprite-1.svg#icon-Mail-contacts"></use>
+                    </svg>
+                    syomochkin@gmail.com
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="contacts__link">
+                    <svg class="contacts__svg">
+                      <use href="./images/sprite-1.svg#icon-Call-contacts"></use>
+                    </svg>
+                    +38 (097) 757-11-89
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="social-links__title">Соц сети:</h3>
+              <ul class="contacts__social-links social-links">
+                <li class="contacts__social-links__item social-links__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="contacts__social-links__link social-links__link"
+                    aria-label="иконка Инстаграм"
+                  >
+                    <svg class="contacts__social-links__image social-links__image">
+                      <use href="./images/sprite-1.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-links__item social-links__item">
+                  <a
+                    href="https://web.telegram.org/k/"
+                    class="contacts__social-links__link social-links__link"
+                    aria-label="иконка Телеграм"
+                  >
+                    <svg class="contacts__social-links__image social-links__image">
+                      <use href="./images/sprite-1.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-links__item social-links__item">
+                  <a
+                    href="https://www.whatsapp.com/"
+                    class="contacts__social-links__link social-links__link"
+                    aria-label="иконка Ватцап"
+                  >
+                    <svg class="contacts__social-links__image social-links__image">
+                      <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-links__item social-links__item">
+                  <a
+                    href="https://www.youtube.com/"
+                    class="contacts__social-links__link social-links__link"
+                    aria-label="иконка Ютуб"
+                  >
+                    <svg class="contacts__social-links__image social-links__image">
+                      <use href="./images/sprite-1.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts-form__container">
+              <h2 class="contacts-form__title">
+                <span class="title--accent">Есть вопросы</span> по<br />
+                процессу коучинга?
+              </h2>
+              <p class="contacts-form__about">
+                Оставьте свои контактные данные и я проконсультирую вас по возникшим вопросам
+              </p>
+              <form action="" class="contacts-form__form">
+                <div class="contacts-form__wrap">
+                  <input type="text" placeholder="Ваше имя" class="contacts-form__input" />
+                  <input type="tel" placeholder="Номер телефона" class="contacts-form__input" />
+                </div>
+
+                <button type="submit" class="contacts-form__button">Получить консультацию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrap--telnone">
+          <a href="./home.html" class="footer__logo logo" aria-label="Логотип компании">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <b class="footer-services__title">Услуги</b>
+          <ul class="footer-services__list">
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг собственников бизнеса</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Стратегические сессии</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Командные тренинги</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Коучинг команд</a>
+            </li>
+            <li class="footer-services__item">
+              <a href="" class="footer-services__link">Обучение</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a href="./about.html" class="footer-menu__link">ОБО МНЕ</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="./clients.html" class="footer-menu__link">КЛИЕНТЫ</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="./articles.html" class="footer-menu__link">БЛОГ</a>
+          </li>
+        </ul>
+
+        <address class="address">
+          <p class="address__text">КОНТАКТЫ</p>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="" class="address__link">
+                <svg class="address__svg">
+                  <use href="./images/sprite-1.svg#icon-mail"></use>
+                </svg>
+                syomochkin@gmail.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a href="" class="address__link">
+                <svg class="address__svg">
+                  <use href="./images/sprite-1.svg#icon-telephone"></use>
+                </svg>
+                +38 (097) 757-11-89</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="footer__wrap--tablnone">
+          <ul class="footer__social-links social-links">
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Инстаграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://web.telegram.org/k/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Телеграм"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.whatsapp.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ватцап"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-links__item social-links__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footer__social-links__link social-links__link"
+                aria-label="иконка Ютуб"
+              >
+                <svg class="footer__social-links__image social-links__image">
+                  <use href="./images/sprite-1.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="./home.html" class="footer__logo logo" aria-label="логотип компании">
+            <svg class="logo__image">
+              <use href="./images/sprite-1.svg#icon-LOGO"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

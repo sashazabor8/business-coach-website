@@ -67,5 +67,13 @@
 <symbol id="icon-Plus-modal" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M16 4v24M4 16h24"></path>
 </symbol>
+
+<symbol id="icon-Mail-contacts" viewBox="0 0 35 32">
+<path fill="none" stroke="#16c7e4" style="stroke: var(--color1, #16c7e4)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4" d="M1.6 8.533c0-1.767 1.433-3.2 3.2-3.2h25.6c1.767 0 3.2 1.433 3.2 3.2v16.267c0 1.767-1.433 3.2-3.2 3.2h-25.6c-1.767 0-3.2-1.433-3.2-3.2v-16.267z"></path>
+<path fill="none" stroke="#16c7e4" style="stroke: var(--color1, #16c7e4)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4" d="M3.874 7.418c-0.807-0.74-0.284-2.085 0.811-2.085h25.83c1.094 0 1.618 1.345 0.811 2.085l-10.482 9.609c-1.835 1.682-4.652 1.682-6.487 0l-10.482-9.609z"></path>
+</symbol>
+<symbol id="icon-Call-contacts" viewBox="0 0 32 32">
+<path fill="none" stroke="#16c7e4" style="stroke: var(--color1, #16c7e4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M29.33 23.385l-0.428 3.852c-0.165 1.488-1.348 2.633-2.832 2.44-3.213-0.419-9.079-2.095-15.364-8.381s-7.962-12.152-8.382-15.365c-0.194-1.484 0.952-2.667 2.44-2.833l3.851-0.428c1.268-0.141 2.499 0.485 3.132 1.593l1.516 2.654c0.716 1.253 0.504 2.83-0.516 3.85l-0.36 0.36c-0.757 0.757-1.076 1.848-0.592 2.802 0.476 0.938 1.296 2.209 2.681 3.594s2.657 2.204 3.594 2.681c0.954 0.484 2.046 0.165 2.802-0.592l0.36-0.36c1.020-1.020 2.597-1.232 3.85-0.516l2.654 1.516c1.108 0.633 1.734 1.864 1.593 3.132z"></path>
+</symbol>
 </defs>
 </svg>
